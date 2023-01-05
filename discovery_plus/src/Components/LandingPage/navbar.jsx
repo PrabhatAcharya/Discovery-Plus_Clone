@@ -1,10 +1,12 @@
  import { Search2Icon } from "@chakra-ui/icons";
 import {Flex,Box,Spacer, Image,Input,InputGroup,InputRightElement, Center, Button} from "@chakra-ui/react";
 import {Link} from "react-router-dom"
+
+
 export const Navbar= () => {
 
     let ss = JSON.parse(localStorage.getItem("s"));
-    console.log(ss);
+    // console.log(ss);
     
     return (
          <>
