@@ -1,20 +1,51 @@
+
+body{
+   
+    background-color: black;
+}
+
+
+.watching_cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    width: 96%;
+    color: white;
+    margin-top: 30px;
+ 
+
+}
+.flex-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+    
+}
+.flex-end h3{
+    margin-left: 3rem;
+}
+
 .card_container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     flex-wrap: wrap;
-    max-width: fit-content;
-    min-width: 350px;
-    overflow-x: hidden;
-   
+    max-width: -moz-fit-content;
+    margin-left: 3rem;
+    gap: 10px;
     
 }
+
+
+
 .content_img{
+    
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 350px;
     height: 192px
 }
 .content_img:hover img{
@@ -24,9 +55,8 @@
 /* Child Text Container */
 .content_img div{
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     right: 0;
-    
    color: white;
     margin-bottom: 0px;
     font-family: sans-serif;
@@ -76,3 +106,20 @@ i{
     background-color: rgba(60, 60, 60, 0.537);
     margin-top: 5;
 }
+.container{
+  width: 83%;   
+}
+.image_cont  img{
+  width: 100%;
+  border-radius: 20px;
+  padding: 7px;
+ 
+}
+.Image_container{
+   width: 80%;
+   margin: auto;
+   padding: 10px;
+
+}
+
+
