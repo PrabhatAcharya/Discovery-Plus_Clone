@@ -1,6 +1,6 @@
 
 body{
-    background: fixed;
+   
     background-color: black;
 }
 
@@ -57,7 +57,6 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
-    
    color: white;
     margin-bottom: 0px;
     font-family: sans-serif;
@@ -108,15 +107,7 @@ i{
     margin-top: 5;
 }
 .container{
-  width: 83%;
-
-  
-
-    
-}
-.image_cont{
-    
-   
+  width: 83%;   
 }
 .image_cont  img{
   width: 100%;
@@ -130,4 +121,5 @@ i{
    padding: 10px;
 
 }
+
 

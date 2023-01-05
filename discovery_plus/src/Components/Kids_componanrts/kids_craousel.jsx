@@ -2,7 +2,6 @@ import React from "react"
 
 import play from "./play.png"
 import { Link } from "react-router-dom"
-import style from './KIDS_css/slider.css'
 import { useState, useEffect } from 'react';
 
 
