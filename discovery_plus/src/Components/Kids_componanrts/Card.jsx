@@ -39,22 +39,24 @@ function Card() {
             
         <div className='card_container'>
                     {
-            state.map((ele, id)=>{
+            state.map((data, id)=>{
             return(
               <>
-            <div className='content_img' onClick={()=>{
-                   localStorage.setItem("Clicked", JSON.stringify({ele}));
+              <Link to="/watch">
+              <div className='content_img' onClick={()=>{
+                   localStorage.setItem("Clicked", JSON.stringify({data}));
                 }}>
                
-                <img src={ele.img} alt=""  />
+                <img src={data.img} alt=""  />
                <div className='hide_title'>
                    <div className='play_btn'>
                      <i class="fa-regular fa-circle-play"></i>
                      </div>
-                    <h4>{ele.title}</h4>
-                    <p>{ele.dis}</p>
+                    <h4>{data.title}</h4>
+                    <p>{data.dis}</p>
                </div>
-              </div>
+              </div>  </Link>
+            
               </>
             )
 
@@ -72,26 +74,28 @@ function Card() {
             
         <div className='card_container'>
                     {
-            state2.map((ele, id)=>{
+            state2.map((data, id)=>{
                 
             return(
               <>
               
-            <div className='content_img' onClick={()=>{
-                   localStorage.setItem("Clicked", JSON.stringify({ele}));
+          <Link to="/watch">
+              <div className='content_img' onClick={()=>{
+                   localStorage.setItem("Clicked", JSON.stringify({data}));
                 }}>
                
-                <img src={ele.img} alt=""  
+                <img src={data.img} alt=""  
                 
                 />
                <div className='hide_title'>
                    <div className='play_btn'>
                      <i class="fa-regular fa-circle-play"></i>
                      </div>
-                    <h4>{ele.title}</h4>
-                    <p>{ele.dis}</p>
+                    <h4>{data.title}</h4>
+                    <p>{data.dis}</p>
                </div>
               </div>
+          </Link>
               </>
             )
 

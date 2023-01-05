@@ -1,9 +1,9 @@
 import React from 'react'
 import style from "./KIDS_css/card.css"
 function Video() {
-    let data=JSON.parse(localStorage.getItem("Clicked"))|| []
-    console.log(data);
-    console.log("this is video comps")
+    let {data} =JSON.parse(localStorage.getItem("Clicked"))|| []
+    
+
   return (
     <div className='Image_container'>
         <div className=''>
@@ -11,11 +11,12 @@ function Video() {
                 <img src={data.img} alt=""  className=''/>
                 </div>
             <div className='flex justify-between relative'>
-                <div className=' flex text-gray-400 gap-2 items-center'>
+                <div className=' flex text-white text-4xl gap-2 items-center'>
+                <i class="fa-solid fa-crown text-2xl bg-sky-600 w-8 h-8 p-0 rounded-1 bg-hex flex justify-center"/>
                     <h1>{data.title}</h1>
                     <br />
                 </div>
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-2 text-gray-400'>
                    <div className=' flex items-center px-3 border text-gray-400 gap-2 '>
                         <i class="fa-solid fa-share-nodes"/>
                         <p>Share</p>
@@ -29,7 +30,7 @@ function Video() {
             <br />
             <div className='flex justify-between  box-border'>
                 <div className='flex text-gray-400 gap-2 items-center'>
-                    <i class="fa-solid fa-crown"/>
+                    
                     <div className='h-2 w-2 rounded-2 bg-gray-400'></div>
                         <p>Kids</p>
                     <div className='h-2 w-2 rounded-2 bg-gray-400'></div>
@@ -47,7 +48,7 @@ function Video() {
             <br />
             <div>
                 <div className=''>
-                    <button className='text-white flex px-3 py-1 gap-2 items-center rounded-2 bg-green-700'><i class="fa-solid fa-play"/> Watch Now</button>
+                    <button className='text-white flex px-2  py-1 gap-2 items-center  bg-sky-600 rounded-2 '><i class="fa-solid fa-play text-2xl  bg-sky-600"/> Watch Now</button>
                 </div>
                 <div className='mb-1 mt-1'>
                     <p className='text-gray-400'>{data.dis}</p>

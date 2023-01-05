@@ -6,7 +6,8 @@ function Watch() {
     let data=JSON.parse(localStorage.getItem("Clicked"))|| []
    
   return (
-   <div>
+   <div className='bg-black'>
+   
       <Video/>
    </div>
   )
