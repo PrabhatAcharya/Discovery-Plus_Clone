@@ -51,7 +51,7 @@
 }
 .img_contain:hover{
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px rgb(13, 162, 221);
+    box-shadow: 0px 0px 10px rgb(7, 211, 238);
   
 }
 .img_details {
