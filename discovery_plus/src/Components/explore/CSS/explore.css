@@ -18,6 +18,8 @@
 .heading:hover{
     color: #c7cddd;
     cursor: pointer;
+    transform: scale(1.1);
+    
 }
 .live-grid {
     display: grid;
@@ -45,6 +47,12 @@
     background-position: center;
     background-position-x: 40%;
     background-position-y: 30%;  
+    transition: transform 0.5s;
+}
+.img_contain:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(13, 162, 221);
+  
 }
 .img_details {
     border-radius: 10px;
@@ -57,6 +65,7 @@
 }
 .img_contain:hover .live_style {
     display: block;
+    
 }
 .block2 {
     padding: 30px 0px;
@@ -66,6 +75,7 @@
     -webkit-tap-highlight-color: transparent;
     outline: none;
     text-decoration: none;
+    
 }
 .blk2_height {
     position: relative;
@@ -83,8 +93,17 @@
     width: 100%;
     background-position: center center;
     border-radius: 10px;
+    transition: transform 0.5s;
+    
+}
+.blk2_contain:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(13, 162, 221);
 }
 .blk2_subs:hover .background {
     display: block;
+    
+
+  
 }
 
