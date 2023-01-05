@@ -9,27 +9,27 @@ import { useState, useEffect } from 'react';
 const slider = [{
   
     title: "Zig & Sharko",
-    description:"A shark will do anything to protect a mermaid from a famished hyena. ",
-    image_url: "https://ap2-prod-images.disco-api.com/2022/01/17/0082c2ce-002c-47ec-9a59-dbe309df2fcb.jpeg?w=600&p=true&q=75",
+    dis:"A shark will do anything to protect a mermaid from a famished hyena. ",
+    img: "https://ap2-prod-images.disco-api.com/2022/01/17/0082c2ce-002c-47ec-9a59-dbe309df2fcb.jpeg?bf=0&f=jpg&p=true&q=85&w=1000",
    
 },
 {
    title: "Tom & Jerry",
-     description:"This cartoon follows the antics of cat Tom in his pursuit of mouse Jerry.",
-    image_url: "https://ap2-prod-images.disco-api.com/2022/01/07/6a422c8d-06e5-44b5-bdde-1b5386692c3d.jpeg?bf=0&f=jpg&p=true&q=85&w=1000",
+     dis:"This cartoon follows the antics of cat Tom in his pursuit of mouse Jerry.",
+    img: "https://ap2-prod-images.disco-api.com/2022/01/07/6a422c8d-06e5-44b5-bdde-1b5386692c3d.jpeg?bf=0&f=jpg&p=true&q=85&w=1000",
     text: "Science"
 },
 {
   
   title: "Zig & Sharko",
-  description:"A shark will do anything to protect a mermaid from a famished hyena. ",
-  image_url: "https://ap2-prod-images.disco-api.com/2022/01/17/0082c2ce-002c-47ec-9a59-dbe309df2fcb.jpeg?w=600&p=true&q=75",
+  dis:"A shark will do anything to protect a mermaid from a famished hyena. ",
+  img: "https://ap2-prod-images.disco-api.com/2022/01/17/0082c2ce-002c-47ec-9a59-dbe309df2fcb.jpeg?bf=0&f=jpg&p=true&q=85&w=1000",
  
 },
 {
  title: "Tom & Jerry",
-   description:"This cartoon follows the antics of cat Tom in his pursuit of mouse Jerry.",
-  image_url: "https://ap2-prod-images.disco-api.com/2022/01/07/6a422c8d-06e5-44b5-bdde-1b5386692c3d.jpeg?bf=0&f=jpg&p=true&q=85&w=1000",
+   dis:"This cartoon follows the antics of cat Tom in his pursuit of mouse Jerry.",
+  img: "https://ap2-prod-images.disco-api.com/2022/01/07/6a422c8d-06e5-44b5-bdde-1b5386692c3d.jpeg?bf=0&f=jpg&p=true&q=85&w=1000",
   text: "Science"
 },
 
@@ -48,24 +48,26 @@ const slider = [{
             <div className="row">
               <div className="col-4">
                 <h1 className='non mt-3 text-white fs-1'  ><strong>{slider[0].title}</strong></h1>
-                 <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[0]?.description}</p>
+                 <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[0]?.dis}</p>
                 <div className="non btn-group mt-3" role="group" aria-label="Basic example">
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px"}}>Trending</button>
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px" }}>Recommanded</button>
                 </div>
-                <Link to="/watch" style={{textDecoration:"none"}}>
+                <Link to="/
+                
+                " style={{textDecoration:"none"}}>
                   <div className='pt-4'>
 
                     <img className='play' src={play} alt="" style={{ maxWidth: "65px", maxHeight: "65px" }} /><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
-                        localStorage.setItem("showData", JSON.stringify(slider[0]));
+                        localStorage.setItem("Clicked", JSON.stringify(slider[0]));
                       }}>Play</span>
                   </div> </Link>
               </div>
               <div className="col-12 col-lg-8">
               <Link to="/watch" style={{textDecoration:"none"}}>
-                  <img style={{ borderRadius: "10px" }} src={slider[0].image_url} className="d-block w-100" alt="..."  onClick={() => {
-                         localStorage.setItem("showData", JSON.stringify(slider[0]));
+                  <img style={{ borderRadius: "10px" }} src={slider[0].img} className="d-block w-100" alt="..."  onClick={() => {
+                         localStorage.setItem("Clicked", JSON.stringify(slider[0]));
                       }}/>
                 </Link>
               </div>
@@ -75,7 +77,7 @@ const slider = [{
             <div className="row">
               <div className="col-4">
                 <h1 className='non mt-3 text-white fs-1'> <strong>{slider[1].title}</strong></h1>
-                <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[0]?.description}</p>
+                <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[0]?.dis}</p>
                 <div className=" non btn-group mt-3" role="group" aria-label="Basic example">
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1 btn-sm" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px" ,maxWidth:"120px"}}>Trending</button>
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1 btn-sm" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px" ,maxWidth:"120px"}}>Recommanded</button>
@@ -84,7 +86,7 @@ const slider = [{
                   <div className='pt-4'>
                     <img className='play' src={play} alt="" style={{ maxWidth: "65px", maxHeight: "65px" }} /><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
-                        localStorage.setItem("showData", JSON.stringify(slider[1]));
+                        localStorage.setItem("Clicked", JSON.stringify(slider[1]));
                       }}>Play</span>
                   </div>
                 </Link>
@@ -92,8 +94,8 @@ const slider = [{
 
               <div className="col-12 col-lg-8">
                 <Link to="/watch" style={{textDecoration:"none"}}>
-                  <img style={{ borderRadius: "10px" }} src={slider[1].image_url} className="d-block w-100" alt="..."  onClick={() => {
-                      localStorage.setItem("showData", JSON.stringify(slider[1]));
+                  <img style={{ borderRadius: "10px" }} src={slider[1].img} className="d-block w-100" alt="..."  onClick={() => {
+                      localStorage.setItem("Clicked", JSON.stringify(slider[1]));
                       }}/>
 
                 </Link>
@@ -107,7 +109,7 @@ const slider = [{
             <div className="row">
               <div className="col-4">
                 <h1 className='non mt-3 text-white fs-1'> <strong>{slider[2].title}</strong></h1>
-                <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[0]?.description}</p>
+                <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[0]?.dis}</p>
                 <div className="non btn-group mt-3" role="group" aria-label="Basic example">
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px" }}>Trending</button>
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px" ,maxWidth:"120px"}}>Recommanded</button>
@@ -116,7 +118,7 @@ const slider = [{
                   <div className='pt-4'>
                     <img className='play' src={play} alt="" style={{ maxWidth: "65px", maxHeight: "65px" }} /><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
-                        localStorage.setItem("showData", JSON.stringify(slider[2]));
+                        localStorage.setItem("Clicked", JSON.stringify(slider[2]));
                       }}>Play</span>
                   </div>
                 </Link>
@@ -124,8 +126,8 @@ const slider = [{
               </div>
               <div className="col-12 col-lg-8">
                 <Link to="/watch" style={{textDecoration:"none"}}>
-                  <img style={{ borderRadius: "10px" }} src={slider[2]?.image_url} className="d-block w-100" alt="..."  onClick={() => {
-                      localStorage.setItem("showData", JSON.stringify(slider[2]));
+                  <img style={{ borderRadius: "10px" }} src={slider[2]?.img} className="d-block w-100" alt="..."  onClick={() => {
+                      localStorage.setItem("Clicked", JSON.stringify(slider[2]));
                       }}/>
                 </Link>
               </div>
@@ -137,7 +139,7 @@ const slider = [{
             <div className="row">
               <div className="col-4">
                 <h1 className='non mt-3 text-white fs-1'> <strong>{slider[3]?.title}</strong></h1>
-                <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[3]?.description}</p>
+                <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[3]?.dis}</p>
                 <div className="non btn-group mt-3" role="group" aria-label="Basic example">
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px" }}>Trending</button>
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px" }}>Recommanded</button>
@@ -147,15 +149,15 @@ const slider = [{
 
                     <img className='play' src={play} alt="" style={{ maxWidth: "65px", maxHeight: "65px" }} /><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
-                        localStorage.setItem("showData", JSON.stringify(slider[3]));
+                        localStorage.setItem("Clicked", JSON.stringify(slider[3]));
                       }}>Play</span>
                   </div>
                 </Link>
               </div>
               <div className="col-12 col-lg-8">
                 <Link to="/watch" style={{textDecoration:"none"}}>
-                  <img style={{ borderRadius: "10px" }} src={slider[3]?.image_url} className="d-block w-100" alt="..."  onClick={() => {
-                        localStorage.setItem("showData", JSON.stringify(slider[3]));
+                  <img style={{ borderRadius: "10px" }} src={slider[3]?.img} className="d-block w-100" alt="..."  onClick={() => {
+                        localStorage.setItem("Clicked", JSON.stringify(slider[3]));
                       }}/>
 
                 </Link>
