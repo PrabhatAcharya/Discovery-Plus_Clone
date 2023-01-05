@@ -6,8 +6,8 @@ function AllRouter() {
   return (
     <div>
       <Routes>
-        {/* <Route path='/' /> */}
-        <Route path='/' element={<Kids/>} />
+        
+        <Route path='/kids' element={<Kids/>} />
         <Route path='/watch' element={<Watch/>}/>
       </Routes>
     </div>

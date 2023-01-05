@@ -56,9 +56,9 @@ const slider = [{
                 <Link to="/
                 
                 " style={{textDecoration:"none"}}>
-                  <div className='pt-4'>
+                  <div className='pt-4 flex items-center gap-2'>
 
-                    <img className='play' src={play} alt="" style={{ maxWidth: "65px", maxHeight: "65px" }} /><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
+                  <i class="fa-regular fa-circle-play w-10 h-10 text-5xl "/><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
                         localStorage.setItem("Clicked", JSON.stringify(slider[0]));
                       }}>Play</span>
@@ -83,8 +83,8 @@ const slider = [{
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1 btn-sm" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px" ,maxWidth:"120px"}}>Recommanded</button>
                 </div>
                 <Link to="/watch" style={{textDecoration:"none"}}>
-                  <div className='pt-4'>
-                    <img className='play' src={play} alt="" style={{ maxWidth: "65px", maxHeight: "65px" }} /><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
+                  <div className='pt-4 flex items-center gap-2'>
+                  <i class="fa-regular fa-circle-play w-10 h-10 text-5xl "/><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
                         localStorage.setItem("Clicked", JSON.stringify(slider[1]));
                       }}>Play</span>
@@ -115,8 +115,8 @@ const slider = [{
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px" ,maxWidth:"120px"}}>Recommanded</button>
                 </div>
                 <Link to="/watch" style={{textDecoration:"none"}}>
-                  <div className='pt-4'>
-                    <img className='play' src={play} alt="" style={{ maxWidth: "65px", maxHeight: "65px" }} /><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
+                  <div className='pt-4 flex items-center gap-2'>
+                  <i class="fa-regular fa-circle-play w-10 h-10 text-5xl "/><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
                         localStorage.setItem("Clicked", JSON.stringify(slider[2]));
                       }}>Play</span>
@@ -145,9 +145,9 @@ const slider = [{
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px" }}>Recommanded</button>
                 </div>
                 <Link to="/watch" style={{textDecoration:"none"}}>
-                  <div className='pt-4'>
+                  <div className='pt-4 flex items-center gap-2'>
 
-                    <img className='play' src={play} alt="" style={{ maxWidth: "65px", maxHeight: "65px" }} /><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
+                  <i class="fa-regular fa-circle-play w-10 h-10 text-5xl "/><span className='px-3' style={{ color: "#ffffff", fontSize: "18px", textAlign:"center" }}
                       onClick={() => {
                         localStorage.setItem("Clicked", JSON.stringify(slider[3]));
                       }}>Play</span>
