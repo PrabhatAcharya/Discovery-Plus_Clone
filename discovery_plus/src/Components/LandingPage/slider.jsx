@@ -64,5 +64,7 @@ const slider = [{
     id: 6,
     img: "https://ap2-prod-images.disco-api.com/2021/04/16/0063fb3a-2b5f-416f-b7b1-e526bf4c1b37.jpeg?w=1200&p=true&q=75",
     text: "Lifestyle"
-},]
+},
+,
+]
 
