@@ -1,0 +1,102 @@
+.shorts_main {
+    padding-top: 3%;
+    background-color: #1a1c21;
+    min-height: calc(100vh - 200px);
+}
+.shorts_letfBox{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 95%;
+    justify-content: space-between;
+    /* background-color: black; */
+    /* background-color: pink; */
+    /* height: 100%;
+    width: 20%; */
+} 
+.shorts_letfBox_cntnt{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    /* background-color: aqua; */
+}
+.category_cntnt{
+    position: sticky;
+    width: 258px;
+    margin: 0px;
+    margin-top: 25px;
+    /* background-color: red; */
+}
+.category_heading{
+    height: 50px;
+    padding: 18px 0px 18px 30px;
+    align-items: center;
+    display: flex;
+    background-color: #121317;
+}
+.category_heading_span{
+    padding: 0px;
+    font-size: 18px;
+    font-weight:500;
+    color: #ffffff;
+    font-family: "Roboto-Bold", sans-serif;
+}
+.categ_line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.subcateg_line{
+    border-bottom: solid 1px #30343b;
+    margin: 0px;
+    width: 221px;
+    height: 1px;
+}
+.button_categ{
+    border: none;
+    width: 258px;
+    background-color: #121317;
+    height: auto;
+    margin: 0px;
+}
+.sub_categ {
+    height: 40px;
+    padding-left: 35px;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    background-color: #121317;
+    cursor: pointer;
+    margin: 0px;
+}
+.category_opt_all{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 1.33;
+    position: relative;
+    color: #838991;
+    padding: 0px;
+}
+.category_opt_all2{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.33;
+    position: relative;
+    padding: 0px;
+}
+.subcateg_line2 {
+    border-bottom: solid 1px #30343b;
+    margin: 0px;
+    width: 221px;
+    height: 1px;
+}
+
+.category{
+    color: aqua;
+    
+} 
+
