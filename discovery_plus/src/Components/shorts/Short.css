@@ -30,7 +30,7 @@
 }
 .category_heading{
     height: 50px;
-    padding: 18px 0px 18px 20px;
+    padding: 18px 0px 18px 30px;
     align-items: center;
     display: flex;
     background-color: #121317;
@@ -64,7 +64,7 @@
 }
 .sub_categ {
     height: 40px;
-    padding-left: 20px;
+    padding-left: 35px;
     align-items: center;
     justify-content: flex-start;
     display: flex;

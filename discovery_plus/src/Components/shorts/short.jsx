@@ -1,4 +1,6 @@
 import { useState } from "react";
+import ReactPlayer from "react-player";
+import Video from "./Videos";
 import './Short.css';
 const Short =() => {
     const [category_all, setCategory_all] = useState("category_opt_all");
@@ -90,8 +92,11 @@ const Short =() => {
 
                     {/* <div><button><span>All</span></button></div> */}
                 </div>
-                <div style={{color:"white"}}>video</div>
-                <div style={{color:"white"}}>right image</div>
+                <div style={{color:""}}>video
+                    {/* <ReactPlayer controls playing={true} url="https://dplus.app.link/WnS8uNa1kwb"></ReactPlayer> */}
+                    {/* <Video/> */}
+                </div>
+                <div style={{color:""}}>right image</div>
             </div>
         </div>
     
