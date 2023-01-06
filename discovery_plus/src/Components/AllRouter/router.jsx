@@ -13,6 +13,7 @@ function AllRouter() {
         <Route path='/kids' element={<Kids/>} />
         <Route path='/watch' element={<Watch/>}/>
         <Route path='/shorts' element={<Short/>} />
+        
         {/* <Route path='/premium' element={<Premium/>}/> */}
       </Routes>
     </div>
