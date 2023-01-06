@@ -1,15 +1,16 @@
 
 import ALLRouter from "./Components/AllRouter/router";
 import { Navbar } from "./Components/LandingPage/navbar";
-import Card from "./Components/Kids_componanrts/Card";
-import Slider from "./Components/Kids_componanrts/kids_craousel";
-import { Explore } from "./Components/explore/explore";
+
+import AllRouter from "./Components/AllRouter/router";
+import Premium from "./Components/Kids_componanrts/video_prem";
 function App() {
   return (
   
     <div className="App">
       <Navbar/>
-      <ALLRouter/>
+     <AllRouter/>
+    
     </div>
   
   );

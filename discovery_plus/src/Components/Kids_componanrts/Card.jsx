@@ -9,14 +9,14 @@ function Card() {
     const [loding, setloding] = useState(false);
     let getdata = async(size=1000)=>{
         setloding(false)
-        let res  =  await fetch(`http://localhost:8080/Singham?_limit=${size}`)
+        let res  =  await fetch(`http://localhost:3000/Singham?_limit=${size}`)
         let data = await res.json();
         setstate(data);
         setloding(true);
     }
     let getdata2 = async(size=1000)=>{
         setloding(false)
-        let res  =  await fetch(`http://localhost:8080/Watching?_limit=${size}`)
+        let res  =  await fetch(` http://localhost:3000/Watching?_limit=${size}`)
         let data = await res.json();
         setstate2(data);
         setloding(true);
@@ -48,6 +48,9 @@ function Card() {
                 }}>
                
                 <img src={data.img} alt=""  />
+              <div className="visible relative top-0 left-0">
+              <i class="fa-solid fa-crown text-xl bg-sky-600 w-6 h-6 p-0 ml-2 mt-2 rounded-1 bg-hex flex justify-center"/>
+              </div>
                <div className='hide_title'>
                    <div className='play_btn'>
                      <i class="fa-regular fa-circle-play"></i>
@@ -84,9 +87,10 @@ function Card() {
                    localStorage.setItem("Clicked", JSON.stringify({data}));
                 }}>
                
-                <img src={data.img} alt=""  
-                
-                />
+                <img src={data.img} alt=""/>
+              <div className="visible relative top-0 left-0">
+                <i class="fa-solid fa-crown text-xl bg-sky-600 w-6 h-6 p-0 ml-2 mt-2 rounded-1 bg-hex flex justify-center"/>
+              </div>
                <div className='hide_title'>
                    <div className='play_btn'>
                      <i class="fa-regular fa-circle-play"></i>
