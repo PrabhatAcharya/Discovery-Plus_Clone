@@ -2,6 +2,8 @@ import React from 'react'
 import logo from './logo.png'
 import style2 from "./KIDS_css/premium.css"
 import { Link, Navigate } from 'react-router-dom'
+
+
 function Video_prem() {
     const {data}= JSON.parse(localStorage.getItem("Clicked")) || [];
   return (
@@ -50,12 +52,16 @@ function Video_prem() {
                 <div className='style_share'>  
                 <div className="pADKZ6">
                         <div className="overlay_icons">
-                            <div id="#facebook">
+                          
+                           <div id="#facebook" onClick={()=>{
+                            <Navigate to="/https://www.facebook.com/" replace={true} />
+                           }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g>
                                     <path fill="#3B5998" d="M0 0H34V34H0z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path>
                                     <path fill="#FFF" d="M14.652 26.152h3.303v-9.071h2.477l.49-2.835h-2.967v-2.054c0-.662.428-1.357 1.04-1.357h1.687V8h-2.067v.013c-3.235.117-3.9 1.99-3.957 3.958h-.006v2.275H13v2.835h1.652v9.071z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path></g></g></g></g>
                                 </svg>
                             </div>
+                          
                             <div id="#twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
                                     <path fill="#55ACEE" d="M0 0H34V34H0z" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path>

@@ -9,7 +9,7 @@ function AllRouter() {
         <Route path='/kids' element={<Kids/>}/>
         <Route path='/watch' element={<Watch/>}/>
         <Route path='/videopremium' element={<Video_prem/>}/>
-        
+      
       </Routes>
     </div>
   )

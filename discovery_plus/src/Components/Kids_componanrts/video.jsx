@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import style from "./KIDS_css/video.css"
 import style2 from "./KIDS_css/premium.css"
 
+
+
 function Video() {
     let {data} =JSON.parse(localStorage.getItem("Clicked"))|| []
    
@@ -14,7 +16,7 @@ function Video() {
     <div className='Inner_container'>
     <Link to='./videopremium'>
         <div className="image_container ">
-                <img src={data.img} alt="" style={{width:"100%", height:"450px"}} />
+                <img src={data.img} alt="" className="w-full flex items-center justify-center m-auto" />
             </div>
         </Link>
         <div className='flex justify-between relative'>
@@ -23,7 +25,7 @@ function Video() {
                 <h1>{data.title}</h1>
                 <br />
             </div>
-            <div className='flex items-center gap-2 text-gray-400'>
+            <div className='flex flex-wrap font-semibold items-center gap-2 text-gray-400'>
                <div className=' flex items-center px-3 border text-gray-400 gap-2 '>
                     <i class="fa-solid fa-share-nodes"/>
                     <p>Share</p>
@@ -84,6 +86,7 @@ function Video() {
                 <button className='text-white flex px-2  py-1 gap-2 items-center  bg-sky-600 rounded-2 '><i class="fa-solid fa-play text-2xl  bg-sky-600"/> Watch Now</button>
             </div>
            </Link>
+        <div className='age_rating'>
             <div className='mb-1 mt-1'>
                 <p className='text-gray-400'>{data.dis}</p>
             </div>
@@ -91,6 +94,7 @@ function Video() {
             <div className='text-gray-400'>
                 <p>Age Rating : U | ontains : Suitable for All Ages</p>
             </div>
+        </div>
         </div>
     </div> 
 

@@ -131,3 +131,15 @@ i{
 
 }
 
+@media screen and (min-width:350px) and (max-width:720px) {
+    .card_container{
+
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: red;
+    }
+    
+}

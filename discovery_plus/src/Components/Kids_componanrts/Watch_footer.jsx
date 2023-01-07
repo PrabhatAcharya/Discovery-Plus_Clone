@@ -6,7 +6,7 @@ import style from "./KIDS_css/watch_footer.css"
 function Watch_footer() {
     const [state, sestate] = useState([]);
     let getdata = async()=>{
-        let res  =  await fetch(` http://localhost:3000/Watching`)
+        let res  =  await fetch(` http://localhost:8080/Watching`)
         let data = await res.json();
         sestate(data);
         
@@ -17,7 +17,7 @@ function Watch_footer() {
         
     },[]);
   return (
-    <div className='bg-plus_back'>
+    <div className= 'Watch_footer bg-plus_back'>
       
       <div className='main bg-plus_back cursor-pointer'>
       {

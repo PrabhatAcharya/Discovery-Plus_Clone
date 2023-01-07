@@ -5,19 +5,20 @@ background-color: #1a1c21;
 
 .Image_container{
     width: 73%;
+    
     background-color: #1a1c21;
     padding: 5px;
     margin-top: 20px;
 }
 .image_cont{
-   
-    width: 100%;
-    height: 350px;
+    width: fit-content;
+    height: fit-content;
     border-radius:10px;
     display: flex;
-    justify-content: space-around;
+    gap: 5px;
     align-items: center;
 }
+
             
 .bttom_btn:hover{
     position: relative;
@@ -70,29 +71,35 @@ background-color: #1a1c21;
     cursor: pointer;
 }
 
-
-/* .share_icon {
-    width: 20px;
-    height: 17px;
-    cursor: pointer;
+@media screen and (min-width:400px) and (max-width:720px) {
+    .Image_container{
+      
+        
+        padding: 5px;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 12px;
+       
+    }
+    .image_cont{
+        width: fit-content;
+        height: fit-content;
+        border-radius:10px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 12px;
+       
+    }
+    .age_rating{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    
 }
-pADKZ6 {
-    display: none;
-    position: absolute;
-    left: 30px;
-    cursor: pointer;
-}
-.overlay_icons {
-    display: flex;
-    gap: 4px;
-}
-.style_share:hover .pADKZ6 {
-    display: block;
-}
-.icons_ofshare {
-    width: 34px;
-    height: 34px;
-    object-fit: contain;
-    padding-left: 2px;
-    cursor: pointer;
-} */
