@@ -8,6 +8,7 @@ function Kids() {
     <div className='bg-black'>
       <Slider/>
       <Card/>
+      
     </div>
   )
 }
