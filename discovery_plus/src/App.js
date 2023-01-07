@@ -9,8 +9,8 @@ function App() {
   
     <div className="App bg-plus_back">
       <Navbar/>
-     <AllRouter/>
-    
+      <ALLRouter/>
+
     </div>
   
   );

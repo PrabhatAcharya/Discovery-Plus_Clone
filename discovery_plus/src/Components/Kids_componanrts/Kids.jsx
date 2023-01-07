@@ -5,6 +5,10 @@ import Card from './Card'
 
 function Kids() {
   return (
+    <div className='bg-black'>
+      <Slider/>
+      <Card/>
+      
     <div className='bg-plus_back'>
      <Slider/>
      <Card/>
