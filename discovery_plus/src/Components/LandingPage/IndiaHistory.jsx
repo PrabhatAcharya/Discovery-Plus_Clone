@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import play from "./Homeimages/play.png"
 
+import play from "./Homeimages/play.png"
+import styled from "@emotion/styled"
 const Toolbar = styled.header`
 .card{
     position: relative;
