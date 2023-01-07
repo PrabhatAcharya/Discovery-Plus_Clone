@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ReactPlayer from "react-player";
 import Video from "./Videos";
 import './Short.css';
 const Short =() => {

@@ -1,44 +1,67 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import style from "./KIDS_css/video.css"
+import logo from './logo.png'
 import style2 from "./KIDS_css/premium.css"
+import { Link, Navigate } from 'react-router-dom'
 
 
-
-function Video() {
-    let {data} =JSON.parse(localStorage.getItem("Clicked"))|| []
-   
-    
+function Video_prem() {
+    const {data}= JSON.parse(localStorage.getItem("Clicked")) || [];
   return (
-    <div className='Image_container bg-plus_back'>
+    <div className='Image_container bg-plus_back mt-3'>
        
-    
-    <div className='Inner_container'>
-    <Link to='./videopremium'>
-        <div className="image_container ">
-                <img src={data.img} alt="" className="w-full flex items-center justify-center m-auto" />
+        <div className=''>
+        <div className='bg-black'>
+           <div className="image_cont">
+                <div className=''>
+                    <img src={logo} alt="logo" />
+                </div>
+                <div>
+                    <span className="text-gray-500 text-sm font-medium">ERROR CODE: SONIC-API: MISSING PACKAGE</span>
+                    <h1 className="text-white text-xl font-bold">You will need to be a premium member to watch this video</h1>
+                    <button onClick={()=>{
+                        <Navigate to="/premium"/>
+                    }}
+                    className="bg-button_prem p-2 rounded-md mt-4"
+                    >GO PREMIUM</button> 
+                      <p className="text-gray-500 mt-5">Get in touch with us at <span className='text-gray-100'>hello@discovery.com</span></p>  
+                      
+                </div> 
+                    
+               
             </div>
-        </Link>
-        <div className='flex justify-between relative'>
+            <Link to="/premium">
+            <div className='flex justify-between items-center '>
+                <h1 className=' text-gray-500 text-2xl font-medium m-2'>Subscribe now and go 100% Ad Free</h1>
+                <button className="bttom_btn bg-premium_btn px-2 p-1 rounded-md text-white">GO PREMIUM</button>
+            </div>
+
+            </Link>
+        </div>
+           
+        <div className='flex justify-between relative '>
             <div className=' flex text-white text-4xl gap-2 items-center'>
             <i class="fa-solid fa-crown text-2xl bg-sky-600 w-8 h-8 p-0 rounded-1 bg-hex flex justify-center"/>
                 <h1>{data.title}</h1>
                 <br />
             </div>
-            <div className='flex flex-wrap font-semibold items-center gap-2 text-gray-400'>
+            <div className='flex items-center gap-2 text-gray-400'>
                <div className=' flex items-center px-3 border text-gray-400 gap-2 '>
                     <i class="fa-solid fa-share-nodes"/>
                     <p>Share</p>
 
-             <div className='style_share'>  
+                <div className='style_share'>  
                 <div className="pADKZ6">
                         <div className="overlay_icons">
-                            <div id="#facebook">
+                          
+                           <div id="#facebook" onClick={()=>{
+                            <Navigate to="/https://www.facebook.com/" replace={true} />
+                           }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g>
                                     <path fill="#3B5998" d="M0 0H34V34H0z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path>
                                     <path fill="#FFF" d="M14.652 26.152h3.303v-9.071h2.477l.49-2.835h-2.967v-2.054c0-.662.428-1.357 1.04-1.357h1.687V8h-2.067v.013c-3.235.117-3.9 1.99-3.957 3.958h-.006v2.275H13v2.835h1.652v9.071z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path></g></g></g></g>
                                 </svg>
                             </div>
+                          
                             <div id="#twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
                                     <path fill="#55ACEE" d="M0 0H34V34H0z" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path>
@@ -55,6 +78,8 @@ function Video() {
                     </div>
                 </div>
                </div>
+               
+
                <div className=' flex items-center px-3 border text-gray-400 gap-2 '>
                     <i class="fa-regular fa-heart"/>
                     <p> Favorite</p>
@@ -70,23 +95,13 @@ function Video() {
                 <div className='h-2 w-2 rounded-2 bg-gray-400'></div>
                      <p>Animated</p>
             </div>
-            <div className='flex gap-2 text-gray-400 flex-wrap  '>
-               <h4>Language</h4>
-               <div>Telugu</div>
-               <div>Malayalam</div>
-               <div>Hindi</div>
-               <div>Kannada</div>
-               <div>Tamil</div>
-            </div>
+           
         </div>
         <br />
         <div>
-           <Link to="/videopremium">
-           <div className=''>
+            <div className=''>
                 <button className='text-white flex px-2  py-1 gap-2 items-center  bg-sky-600 rounded-2 '><i class="fa-solid fa-play text-2xl  bg-sky-600"/> Watch Now</button>
             </div>
-           </Link>
-        <div className='age_rating'>
             <div className='mb-1 mt-1'>
                 <p className='text-gray-400'>{data.dis}</p>
             </div>
@@ -95,13 +110,10 @@ function Video() {
                 <p>Age Rating : U | ontains : Suitable for All Ages</p>
             </div>
         </div>
-        </div>
-    </div> 
-
-
+    </div>
     
     </div>
   )
 }
 
-export default Video
+export default Video_prem
