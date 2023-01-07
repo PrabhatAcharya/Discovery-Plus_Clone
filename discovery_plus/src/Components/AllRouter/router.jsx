@@ -1,8 +1,12 @@
-const explore=()=>{
-    return <>
-    <div id="screen" style={{height: "100%", width: "100%", backgroundColor: "#1a1c21"}}>
+import { Route,Routes } from "react-router-dom";
+import {Explore} from "./explore/explore";
 
-    </div>
+export const Router =()=>{
+    return <>
+    <Routes>
     
+    <Route path="/explore" element={<Explore/>}></Route>
+      
+    </Routes>
     </>
 }

@@ -209,7 +209,9 @@ export const Explore=()=>{
                                  </g></g></g></g></svg>
                </div>
               </div>  
+
                    </div> 
+
           </a> 
           <a className="live_blks" href="">
              <div className="subboxes">
@@ -248,8 +250,6 @@ export const Explore=()=>{
                    </div> 
           </a> 
              
-            
-
          </div>
 
          </div>
@@ -284,7 +284,7 @@ export const Explore=()=>{
              </div>
              </a>
          </div>
-         <div>
+         <div>  
              <a className="blk2_subs" href=""><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Mind})` }}>
                  <div className="background"></div>
