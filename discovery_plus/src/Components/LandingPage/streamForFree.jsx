@@ -1,12 +1,78 @@
 import styled from "styled-components"
-import play from "../LandingPage/Homeimages/play.png"
+import play from "./Homeimages/play.png"
+
 const Toolbar = styled.header`
 .card{
     position: relative;
   text-align: center;
   color: white;
-  height:"50%";
 }
+.overlay1 {
+ 
+ position: absolute; 
+ bottom: 0; 
+ background: rgb(0, 0, 0);
+ background: rgba(0, 0, 0, 0.5); /* Black see-through */
+ color: #f1f1f1; 
+ width: 100%;
+ transition: .5s ease;
+ opacity:0;
+ height:100%;
+ color: white;
+ padding:10px;
+}
+.card:hover .overlay1 {
+ opacity: 1;
+ 
+}
+.card:hover 
+ .btn-primary{
+    display:none
+ 
+}
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.centered {
+  position: absolute;
+  max-width:"5px";
+  max-height:"5px";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media all and (max-width:500px){   
+      width:30px;
+      height:30px
+   } ,
+   @media all and (max-width:350px){   
+      width:20px;
+      height:20px
+   } 
+}
+.row{
+    position: relative;
+  top: 70%;
+  left: 0%;
+  @media all and (max-width:984px){   
+    top: 78%;
+  left: 0%;
+   } 
+}
+.col-2{
+    align-text:center;
+    margin-top:3rem;
+    @media all and (max-width:576px){   
+     display:none
+   } 
+}
+.col-10 {
+    white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
   p{
   position: absolute;
   font-size:1.330vw;
@@ -15,41 +81,8 @@ const Toolbar = styled.header`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  }
-  .Hover_container div{
-    
-  }
-  .hover_img{
-    visibility: visible;
-    backgroundColor:red;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
-    position:relative;
-   let:0;
-   right:0;
-   top:10%;
-
-
-  }
-  .hover_img:hover{
-    visibility: hidden;
-    backgroundColor:black;
-
-    ${'' /* .inner_container div{
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear; 
-}
-.inner_container:hover div{
-    visibility: visible;
-    transition: 5ms;
-} */}
-
-  }
-  
-  
-  `
-export const StreamForFree=()=> {
+  }`
+export const StreamForFree=()=>{
     return (
         <Toolbar>
         <h3 style={{ backgroundColor: "rgb(18,19,23)",paddingLeft:"4%", color:"white",fontSize:"larger",fontWeight:"bold" }}>Stream For Free Now</h3>
@@ -57,20 +90,45 @@ export const StreamForFree=()=> {
                 <div className="row">
                     {
                         slider.map((e) => (
-                            <div className="col col-4 g-2 col-lg-2 col-xl-2" key={e.id} >
-                                <div className="Hover_container">
-                                    <div className="card" style={{border:"none" }}>
-                                        <img style={{height:"250px",borderRadius: "5px"}} src={e.img} classname="img-fluid" alt="" />
-                                       <div className="hover_img">
-                                            <img src={play} />
-                                       </div>
+                            <div className="col col-4  g-3 col-lg-2 col-xl-2" key={e.id} >
+                                <div className="card" style={{border:"none" }}>
+                                    <img style={{borderRadius: "5px",height:"250px"}} src={e.img} classname="img-fluid" alt="" />
+                                    {/* <p >{e.text}</p> */}
+                                    <div className="overlay1" style={{ padding: "1%" }}>
+                                    <img className='centered' src={play} alt="" style={{ maxwidth: "45px", maxHeight: "45px" }} />
+                                    <div className="row mb-0 pb-0">
+                                        <h5 className='mb-0 tit smooth' >{e.title}</h5>
                                     </div>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
 
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <p className="float-start" style={{ color: "#abafb4" }} aria-current="page" >{e.description}</p>
+                                        </div>
+                                        <div className="col-2">
+                                        <i class="fa-regular fa-heart" onClick={() => {
+                                            
+
+                                            }}></i>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                           
+                                    </div>
+                                    </div>
+
+
+
+                                    {/* ========================= */}
+                                </div>
+                          
+                        ))
+                    };
+                </div>
+               
             </div>
         </Toolbar>
     )
