@@ -52,9 +52,9 @@ const slider = [{
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px"}}>Trending</button>
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px" }}>Recommanded</button>
                 </div>
-                <Link to="/
+                <Link to="/videopremium"
                 
-                " style={{textDecoration:"none"}}>
+                 style={{textDecoration:"none"}}>
                   <div className='pt-4 flex items-center gap-2'>
 
                   <i class="fa-regular fa-circle-play w-10 h-10 text-5xl "/><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
@@ -81,7 +81,7 @@ const slider = [{
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1 btn-sm" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px" ,maxWidth:"120px"}}>Trending</button>
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1 btn-sm" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px" ,maxWidth:"120px"}}>Recommanded</button>
                 </div>
-                <Link to="/watch" style={{textDecoration:"none"}}>
+                <Link to="./videopremium" style={{textDecoration:"none"}}>
                   <div className='pt-4 flex items-center gap-2'>
                   <i class="fa-regular fa-circle-play w-10 h-10 text-5xl "/><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
@@ -92,7 +92,7 @@ const slider = [{
               </div>
 
               <div className="col-12 col-lg-8">
-                <Link to="/watch" style={{textDecoration:"none"}}>
+                <Link to="./videopremium" style={{textDecoration:"none"}}>
                   <img style={{ borderRadius: "10px" }} src={slider[1].img} className="d-block w-100" alt="..."  onClick={() => {
                       localStorage.setItem("Clicked", JSON.stringify(slider[1]));
                       }}/>
@@ -113,7 +113,7 @@ const slider = [{
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px",maxWidth:"120px" }}>Trending</button>
                   <button type="button" className="btn btn-secondary btn-sm py-0 mx-1" style={{ backgroundColor: "rgb(40,46,61)", color: "#b6bbc0", fontSize: "12px" ,maxWidth:"120px"}}>Recommanded</button>
                 </div>
-                <Link to="/watch" style={{textDecoration:"none"}}>
+                <Link to="./videopremium" style={{textDecoration:"none"}}>
                   <div className='pt-4 flex items-center gap-2'>
                   <i class="fa-regular fa-circle-play w-10 h-10 text-5xl "/><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
@@ -124,7 +124,7 @@ const slider = [{
 
               </div>
               <div className="col-12 col-lg-8">
-                <Link to="/watch" style={{textDecoration:"none"}}>
+                <Link to="./videopremium" style={{textDecoration:"none"}}>
                   <img style={{ borderRadius: "10px" }} src={slider[2]?.img} className="d-block w-100" alt="..."  onClick={() => {
                       localStorage.setItem("Clicked", JSON.stringify(slider[2]));
                       }}/>

@@ -1,8 +1,12 @@
+import { background } from '@chakra-ui/react';
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import style from './KIDS_css/card.css'
 import play from './play.png'
+import { Spinner } from '@chakra-ui/react'
+
+
 function Card() {
     const [state, setstate] = useState([]);
     const [state2, setstate2] = useState([]);
@@ -16,7 +20,7 @@ function Card() {
     }
     let getdata2 = async(size=1000)=>{
         setloding(false)
-        let res  =  await fetch(`http://localhost:8080/Watching?_limit=${size}`)
+        let res  =  await fetch(` http://localhost:8080/Watching?_limit=${size}`)
         let data = await res.json();
         setstate2(data);
         setloding(true);
@@ -26,7 +30,8 @@ function Card() {
         getdata(4);
         getdata2(4);
     },[]);
-  //  console.log(state2)
+  
+
 
   return (
     
@@ -48,6 +53,9 @@ function Card() {
                 }}>
                
                 <img src={data.img} alt=""  />
+              <div className="visible relative top-0 left-0">
+              <i class="fa-solid fa-crown text-xl bg-sky-600 w-6 h-6 p-0 ml-2 mt-2 rounded-1 bg-hex flex justify-center"/>
+              </div>
                <div className='hide_title'>
                    <div className='play_btn'>
                      <i class="fa-regular fa-circle-play"></i>
@@ -84,9 +92,10 @@ function Card() {
                    localStorage.setItem("Clicked", JSON.stringify({data}));
                 }}>
                
-                <img src={data.img} alt=""  
-                
-                />
+                <img src={data.img} alt=""/>
+              <div className="visible relative top-0 left-0">
+                <i class="fa-solid fa-crown text-xl bg-sky-600 w-6 h-6 p-0 ml-2 mt-2 rounded-1 bg-hex flex justify-center"/>
+              </div>
                <div className='hide_title'>
                    <div className='play_btn'>
                      <i class="fa-regular fa-circle-play"></i>

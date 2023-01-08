@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
-import React from 'react'
-import Kids from '../Kids_componanrts/Kids'
 import Watch from '../Kids_componanrts/Watch'
 // import { Premium } from '../Primium/Premium'
 import { Home } from '../LandingPage/home'
 import Short from '../shorts/short'
 import HomevedioPlay from '../LandingPage/HomevedioPlay'
+import Kids from '../Kids_componanrts/Kids'
+import Video_prem from '../Kids_componanrts/video_prem'
 function AllRouter() {
   return (
     <div>
