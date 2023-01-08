@@ -13,14 +13,14 @@ function Card() {
     const [loding, setloding] = useState(false);
     let getdata = async(size=1000)=>{
         setloding(false)
-        let res  =  await fetch(`http://localhost:8080/Singham?_limit=${size}`)
+        let res  =  await fetch(`https://testapi-7cxh.onrender.com/Watching?_limit=${size}`)
         let data = await res.json();
         setstate(data);
         setloding(true);
     }
     let getdata2 = async(size=1000)=>{
         setloding(false)
-        let res  =  await fetch(` http://localhost:8080/Watching?_limit=${size}`)
+        let res  =  await fetch(`https://testapi-7cxh.onrender.com/Singham?_limit=${size}`)
         let data = await res.json();
         setstate2(data);
         setloding(true);
@@ -36,13 +36,15 @@ function Card() {
   return (
     
     <>
-    <div className='watching_cart'>
-        <div className='flex-end'> 
+    <div className='watching_cart sm '>
+        
+    <div className='ViewAll'> 
         <h3>Everyone's Watching</h3>
+  
         <button onClick={()=>getdata()}>View All</button>
-        </div>
-            
+        </div> 
         <div className='card_container'>
+       
                     {
             state.map((data, id)=>{
             return(
@@ -74,10 +76,10 @@ function Card() {
     </div>
     </div>
     <br />
-    <div className='watching_cart'>
-        <div className='flex-end'> 
-        <h3>Little Singham VS Kaal</h3>
-        <button onClick={()=>getdata2()}>View All</button>
+    <div className='watching_cart tablet'>
+        <div className='flex-end viewAll'> 
+          <h3>Little Singham VS Kaal</h3>
+          <button onClick={()=>getdata2()}>View All</button>
         </div>
             
         <div className='card_container'>

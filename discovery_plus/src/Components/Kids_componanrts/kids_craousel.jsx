@@ -3,7 +3,7 @@ import React from "react"
 import play from "./play.png"
 import { Link } from "react-router-dom"
 import { useState, useEffect } from 'react';
-
+import style from './KIDS_css/Screen.css'
 
 const slider = [{
   
@@ -40,11 +40,14 @@ const slider = [{
 
   return (
    
-    <div  className="main_kids_container" style={{minWidth:"350px", display:"flex", flexWrap:"wrap"}}>
+    <div  className="main_kids_container" style={{ minWidth:"557px"}}>
       <div id="carouselExampleCaptions" className="carousel slide " data-bs-ride="carousel" style={{ backgroundColor: "rgb(18,19,23)", padding: "4%", paddingTop: "0px", paddingBottom: "0px" }} >
         <div className="carousel-inner" style={{ padding: "3%" }}>
-          <div className="carousel-item active">
+
+
+          <div className="carousel-item active first_image ">
             <div className="row">
+
               <div className="col-4">
                 <h1 className='non mt-3 text-white fs-1'  ><strong>{slider[0].title}</strong></h1>
                  <p className="non card-text mb-0 py-1" style={{ color: "#838991", fontSize: "18px" }}>{slider[0]?.dis}</p>
@@ -57,12 +60,13 @@ const slider = [{
                  style={{textDecoration:"none"}}>
                   <div className='pt-4 flex items-center gap-2'>
 
-                  <i class="fa-regular fa-circle-play w-10 h-10 text-5xl "/><span className='px-3' style={{ color: "#ffffff", fontSize: "18px" }}
+                  <i class="fa-regular fa-circle-play w-10 h-10 text-5xl mb-5"/><span className='px-3 mb-5' style={{ color: "#ffffff", fontSize: "18px" }}
                       onClick={() => {
                         localStorage.setItem("Clicked", JSON.stringify(slider[0]));
                       }}>Play</span>
                   </div> </Link>
               </div>
+
               <div className="col-12 col-lg-8">
               <Link to="/watch" style={{textDecoration:"none"}}>
                   <img style={{ borderRadius: "10px" }} src={slider[0].img} className="d-block w-100" alt="..."  onClick={() => {
@@ -72,6 +76,7 @@ const slider = [{
               </div>
             </div>
           </div>
+
           <div className="carousel-item">
             <div className="row">
               <div className="col-4">

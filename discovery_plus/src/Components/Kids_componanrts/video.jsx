@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import style from "./KIDS_css/video.css"
+import style from "./KIDS_css/Screen.css"
 import style2 from "./KIDS_css/premium.css"
 
 
@@ -16,7 +16,7 @@ function Video() {
     <div className='Inner_container'>
     <Link to='./videopremium'>
         <div className="image_container ">
-                <img src={data.img} alt="" className="w-full flex items-center justify-center m-auto" />
+                <img src={data.img} alt="" className="w-full h-4/6 flex items-center justify-center m-auto" />
             </div>
         </Link>
         <div className='flex justify-between relative'>
