@@ -1,0 +1,36 @@
+.otp_container{
+    border: 1px solid black;
+    width: 350px;
+    height: 400px;
+    margin: auto;
+    justify-content: space-between;
+}
+.otp_body{
+    height: 650px;
+}
+.gap_again{
+    padding-top: 100px;
+}
+.otp_body{
+    background-color: black;
+}
+.head{
+    font-weight: 400;
+   
+}
+.paragraph_otp{
+    color:grey;
+    margin-left: 40px;
+
+}
+.input_tag{
+    margin-top: 40px;
+    width: 40%;
+    margin-left: 110px;
+}
+.head{
+    margin-left: 30px;
+}
+.otp_btn{
+    margin-top: 40px;
+}
