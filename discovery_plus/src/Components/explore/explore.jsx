@@ -37,6 +37,8 @@ import Trvl from "./Images/trvl_explore.png";
 import Turbo from "./Images/turbo_explore.jpg";
 import "./CSS/explore.css"
 import { Link } from "react-router-dom";
+import { Home } from "../LandingPage/home";
+import Short from "../shorts/short";
 
 
 export const Explore=()=>{
@@ -256,45 +258,53 @@ export const Explore=()=>{
          </div>
 
          <div className="block2">
-        <Link to='/short'>
+        
         <div id="exploreHeader"> <h6 className="heading" >Explore Shows and Full Episodes!</h6></div>
-        </Link>
+        
 
          <div className="live-grid">
 
          <div>
-             <a className="blk2_subs" href=""><div className="blk2_height">
+            <Link to="/premium">
+           <div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Bbc})` }}>
                  <div className="background"></div>
              </div>
              </div>
-             </a>
+             
+             </Link>
             
          </div>
          <div> 
+            <Link to="/premium">
              <a className="blk2_subs" href=""><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${AnE})` }}>
                  <div className="background"></div>
              </div>
              </div>
              </a>
+             </Link>
          </div>
          <div>
-            
+            <Link to="/shorts">
              <a className="blk2_subs" href=""><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${All_exp})` }}>
                  <div className="background"></div>
              </div>
              </div>
              </a>
+             </Link>
+
          </div>
          <div>  
+            <Link to="/shorts">
              <a className="blk2_subs" href=""><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Mind})` }}>
                  <div className="background"></div>
              </div>
              </div>
              </a>
+             </Link>
          </div>
          </div>
         
