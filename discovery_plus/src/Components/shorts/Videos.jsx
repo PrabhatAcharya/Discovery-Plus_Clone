@@ -1,18 +1,13 @@
-const src = "https://dplus.app.link/BHqMLXV5kwb";
-// 
-
-const Video = () => {
-  return (
-    // <iframe
-    //   width="560"
-    //   height="315"
-    //   src={src}
-    //   title="Youtube Player"
-    //   frameborder="0"
-    //   allowFullScreen
-    // />
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RIofkrOFFSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  );
-};
-
-export default Video;
+import {Player, ControlBar, PlayToggle} from 'video-react';
+const ShortVideo = () => {
+  return(
+   
+        <Player fluid={false} width="100%" height={1000} autoPlay disableDefaultControls={true}
+                          poster="/assets/poster.png"
+                          src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                        >
+        </Player>                      
+    
+  )
+}
+export default ShortVideo;
