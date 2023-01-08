@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ReactPlayer from "react-player";
-import Video from "./Videos";
+import styled from "@emotion/styled";
 import './Short.css';
 const Short =() => {
     const [category_all, setCategory_all] = useState("category_opt_all");

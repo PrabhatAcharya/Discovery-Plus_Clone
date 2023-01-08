@@ -1,32 +1,23 @@
-import { Route,Routes } from "react-router-dom";
-import {Explore} from "./explore/explore";
-
-export const Router =()=>{
-    return <>
-    <Routes>
-    
-    <Route path="/explore" element={<Explore/>}></Route>
-      
-    </Routes>
-    </>
 import { Routes, Route } from 'react-router-dom'
-import React from 'react'
-import Kids from '../Kids_componanrts/Kids'
 import Watch from '../Kids_componanrts/Watch'
 // import { Premium } from '../Primium/Premium'
-import { Home } from '../LandingPage/home'
 import Short from '../shorts/short'
+import Kids from '../Kids_componanrts/Kids'
+// import Video_prem from '../Kids_componanrts/video_prem'
+import { Home } from '../LandingPage/home'
+
 function AllRouter() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path="" element={<Home/>}/>
         <Route path='/kids' element={<Kids/>} />
         <Route path='/watch' element={<Watch/>}/>
-        <Route path='/shorts' element={<Short/>} />
-        
-        {/* <Route path='/premium' element={<Premium/>}/> */}
+        <Route path='/shorts' element={<Short/>}/>
       </Routes>
     </div>
   )
 }
+
+
+export default AllRouter
