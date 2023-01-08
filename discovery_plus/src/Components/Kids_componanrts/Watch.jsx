@@ -10,6 +10,7 @@ function Watch() {
     <div className="bg-plus_back">
       <Video/>
       <Watch_footer/>
+     
     </div>
   )
 }
