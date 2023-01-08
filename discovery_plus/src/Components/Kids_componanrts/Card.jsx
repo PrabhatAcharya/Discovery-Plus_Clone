@@ -62,8 +62,8 @@ function Card() {
                    <div className='play_btn'>
                      <i class="fa-regular fa-circle-play"></i>
                      </div>
-                    <h4>{data.title}</h4>
-                    <p>{data.dis}</p>
+                     <h4 className='text-md'>{data.title}</h4>
+                    <p className='text-sm text-gray-400'>{data.dis}</p>
                </div>
               </div>  </Link>
             
@@ -102,8 +102,8 @@ function Card() {
                    <div className='play_btn'>
                      <i class="fa-regular fa-circle-play"></i>
                      </div>
-                    <h4>{data.title}</h4>
-                    <p>{data.dis}</p>
+                    <h4 className='text-md text-white'>{data.title}</h4>
+                    <p className='text-sm text-gray-400'>{data.dis}</p>
                </div>
               </div>
           </Link>

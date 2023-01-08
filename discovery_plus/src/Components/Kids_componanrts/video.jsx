@@ -14,7 +14,7 @@ function Video() {
        
     
     <div className='Inner_container'>
-    <Link to='./videopremium'>
+    <Link to='/videopremium'>
         <div className="image_container ">
                 <img src={data.img} alt="" className="w-full h-4/6 flex items-center justify-center m-auto" />
             </div>

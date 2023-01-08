@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.png'
 import style2 from "./KIDS_css/premium.css"
-import { Link, Navigate } from 'react-router-dom'
+import { Link, Navigate, NavLink } from 'react-router-dom'
 
 
 function Video_prem() {
@@ -54,18 +54,22 @@ function Video_prem() {
                <div className="pADKZ6_kids">
                        <div className="overlay_icons">
                          
+                              <a href="https://www.facebook.com/">
+                                 
                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g>
                                    <path fill="#3B5998" d="M0 0H34V34H0z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path>
                                    <path fill="#FFF" d="M14.652 26.152h3.303v-9.071h2.477l.49-2.835h-2.967v-2.054c0-.662.428-1.357 1.04-1.357h1.687V8h-2.067v.013c-3.235.117-3.9 1.99-3.957 3.958h-.006v2.275H13v2.835h1.652v9.071z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path></g></g></g></g>
                                </svg>
-                      
-                         
+                              </a>
+                            
+                         <a href="https://twitter.com/login?lang=en">
                            <div id="#twitter">
                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
                                    <path fill="#55ACEE" d="M0 0H34V34H0z" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path>
-                                   <path fill="#FFF" d="M25.765 10.33c-.531.34-1.751.835-2.353.835-.687-.717-1.654-1.165-2.726-1.165-2.083 0-3.773 1.69-3.773 3.772 0 .289.034.571.096.842-2.826-.074-5.917-1.49-7.777-3.915-1.144 1.98-.154 4.182 1.144 4.984-.445.034-1.263-.05-1.648-.426-.025 1.314.606 3.055 2.91 3.687-.443.238-1.229.17-1.57.119.12 1.11 1.673 2.56 3.372 2.56-.606.7-2.884 1.97-5.44 1.566 1.736 1.056 3.76 1.668 5.901 1.668 6.086 0 10.813-4.932 10.558-11.017l-.001-.02.001-.048-.002-.056c.554-.378 1.298-1.049 1.829-1.93-.308.169-1.232.508-2.092.593.552-.298 1.37-1.274 1.571-2.05" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path></g></g></g></g></g>
-                               </svg>
+                               <path fill="#FFF" d="M25.765 10.33c-.531.34-1.751.835-2.353.835-.687-.717-1.654-1.165-2.726-1.165-2.083 0-3.773 1.69-3.773 3.772 0 .289.034.571.096.842-2.826-.074-5.917-1.49-7.777-3.915-1.144 1.98-.154 4.182 1.144 4.984-.445.034-1.263-.05-1.648-.426-.025 1.314.606 3.055 2.91 3.687-.443.238-1.229.17-1.57.119.12 1.11 1.673 2.56 3.372 2.56-.606.7-2.884 1.97-5.44 1.566 1.736 1.056 3.76 1.668 5.901 1.668 6.086 0 10.813-4.932 10.558-11.017l-.001-.02.001-.048-.002-.056c.554-.378 1.298-1.049 1.829-1.93-.308.169-1.232.508-2.092.593.552-.298 1.37-1.274 1.571-2.05" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path></g></g></g></g></g>
+                            </svg>
                            </div>
+                           </a>
                            <div class="styles-copyLink-gK2TbP4i" id="#clipboard">
                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
                                    <path fill="#59A015" d="M0 0H34V34H0z" transform="translate(-529 -1179) translate(326 661) translate(133 518) translate(70)"></path>
@@ -76,8 +80,6 @@ function Video_prem() {
                    </div>
                </div>
               </div>
-              
-
               <div className=' flex items-center px-3 border text-gray-400 gap-2 '>
                    <i class="fa-regular fa-heart"/>
                    <p> Favorite</p>

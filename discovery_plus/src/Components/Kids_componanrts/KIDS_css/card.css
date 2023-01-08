@@ -39,7 +39,7 @@ align-items: center;
 gap: 10px;
 border-radius: 5px;
 margin: auto;
-margin-right: -2px;
+
 }
 
 
@@ -149,7 +149,7 @@ i{
        box-sizing: border-box;
        width: fit-content;
        height: fit-content;
-       margin-right: 20px;
+       
         
     }
     .ViewAll{
