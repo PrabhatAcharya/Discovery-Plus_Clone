@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./KIDS_css/card.css"
 function Video() {
-    let {data} =JSON.parse(localStorage.getItem("Clicked"))|| []
+    let data =JSON.parse(localStorage.getItem("Clicked"))|| []
     
 
   return (
