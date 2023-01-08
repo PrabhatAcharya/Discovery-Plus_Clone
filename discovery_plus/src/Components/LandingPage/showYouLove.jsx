@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "@emotion/styled"
 import play from "./Homeimages/play.png"
 import { Link } from "react-router-dom";
 const Toolbar = styled.header`
@@ -89,20 +89,22 @@ export const ShowYouLove=()=> {
                 <div className="row">
                     {
                         slider.map((e) => (
-                            <div className="col col-4  g-3 col-lg-2 col-xl-3" key={e.id} onClick="localStore()">
-                            <Link> 
+                            <div className="col col-4  g-3 col-lg-2 col-xl-3" key={e.id} >
+                            <Link to="/Shows_You_Love" style={{textDecoration:"none"}}> 
                                <div className="card" style={{border:"none" }}   >
                                     <img style={{borderRadius: "5px"}} src={e.img} classname="img-fluid" alt="" />
                                   
                                     <div className="overlay1" style={{ padding: "1%" }}>
-                                    <img className='centered' src={play} alt="" style={{ maxwidth: "45px", maxHeight: "45px" }} />
+                                    <img className='centered' src={play} alt="" style={{ maxwidth: "45px", maxHeight: "45px" }} onClick={() => {
+                                       localStorage.setItem("showYouLove", JSON.stringify(e));
+                                     }}  />
                                     <div className="row mb-0 pb-0">
                                         <h5 className='mb-0 tit smooth' >{e.title}</h5>
                                     </div>
 
                                     <div className="row">
                                         <div className="col-10">
-                                            <p className="float-start" style={{ color: "#abafb4" }} aria-current="page" >{e.description}</p>
+                                            <p className="float-start" style={{ color: "#abafb4" }} aria-current="page" >{e.dis}</p>
                                         </div>
                                         <div className="col-2">
                                         <i class="fa-regular fa-heart"></i>
@@ -126,25 +128,25 @@ const slider = [{
     id: 1,
     img: "https://ap2-prod-images.disco-api.com/2022/09/25/b229caa5-fbb3-426f-af07-69ada1246b5c.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
     title:"Little Singham",
-    description:"A nine-year-old boy battles evil villa.."
+    dis:"A nine-year-old boy battles evil villa.."
 },
 {
     id: 2,
     img: "https://ap2-prod-images.disco-api.com/2022/11/09/8c94e362-2a17-4587-a9db-2d5fa6549f9e.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
     title:"Money Mafia",
-    description:"Eight of the most shocking con.."
+    dis:"Eight of the most shocking con.."
 },
 {
     id: 3,
     img: "https://ap2-prod-images.disco-api.com/2022/08/18/8accb6b7-de88-42b9-a129-bcf6107350b5.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
     title:"Secrets of the Koh-i-noor",
-    description:"Follow the journey of the worl.."
+    dis:"Follow the journey of the worl.."
 },
-// {
-//     id: 4,
-//     img: "https://ap2-prod-images.disco-api.com/2021/08/24/d285028a-f3c8-440e-bb38-3565f6425960.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-//     title:"Mumbai Railway",
-//     description:"Four presenters commute Mumbai.."
-// }
+{
+    id: 4,
+    img: "https://ap2-prod-images.disco-api.com/2021/08/24/d285028a-f3c8-440e-bb38-3565f6425960.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
+    title:"Mumbai Railway",
+    dis:"Four presenters commute Mumbai.."
+}
 ]
 

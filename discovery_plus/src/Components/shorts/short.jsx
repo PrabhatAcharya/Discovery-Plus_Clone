@@ -1,22 +1,17 @@
 import { useState } from "react";
+<<<<<<< HEAD
 import ReactPlayer from "react-player";
 import styled from "@emotion/styled";
+=======
+import ShortVideo from "./Videos";
+import Icons from "./Icons";
+>>>>>>> 89e1dc39b86c872469a2e3d74427723967e8a97c
 import './Short.css';
 const Short =() => {
     const [category_all, setCategory_all] = useState("category_opt_all");
     const [category_all2, setCategory_all2] = useState("category_opt_all2");
-   
-
-    // const handleAll = ()=> {
-    //     setCategory_all("category_opt_all");
-    // }
-    // const handleAdv = ()=> {
-    //     setCategory_all("cates_opt_all2");
-    // }
-    
     return(
         <div className="shorts_main">
-            {/* <h3 style={{color:"white"}}>This is shorts Section</h3> */}
             <div className="shorts_mainDiv">
                 <div className="shorts_letfBox_section">
                     <div className="category_cntnt">
@@ -31,10 +26,10 @@ const Short =() => {
                         <div>
                             <button className="button_categ">
                                 <div className="sub_categ" id="#category">
-                                    <span className={category_all}>All</span>
+                                    <span className={category_all} id="highlight">All</span>
                                 </div>
                                 <div className="categ_line">
-                                    <div className="subcateg_line2"></div>
+                                    <div className="subcateg_line_highlight"></div>
                                 </div>
                             </button> 
                         </div>
@@ -93,81 +88,21 @@ const Short =() => {
 
                 <div className="shorts_middle_section">
                     <div className="short_videos_blk">
+
                         <div className="content_shorts">
                             <div className="content_shorts1">
                                 <div className="video_wrapper1">
                                     <div id="videoTitle">
                                         <h4 className="video_title">Family + Facts + Fun</h4>
                                     </div>
+                                  
                                     <div className="blank_space">
                                         <div>Age Rating : U</div>
                                     </div>
-                                    <div className="video_content_box">  
-                                        <div>
-                                            <img style={{width: "100%", height: "100%"}} src="https://i2.wp.com/www.theunbiasedblog.com/wp-content/uploads/2021/06/discovery-Family-Facts-Fun.jpg?fit=800%2C450&ssl=1"></img>
-                                        </div>
+                                    <div className="videoShow1">
+                                        <ShortVideo/>
                                     </div>
-                                    <div className="video_sharing">
-                                        <div className="sharing_opt">
-                                            <div className="optionals">
-                                                <div className="style_heart" id="unLike">
-                                                    <svg width="22px" height="20px" viewBox="0 0 22 20" className="heart_icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                                        <desc>Created with Sketch.</desc>
-                                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                <g id="Shorts-Copy" transform="translate(-345.000000, -701.000000)" stroke="white" stroke-width="1.5">
-                                                                    <path d="M360.683055,701.75 C359.884958,701.75 359.127378,701.923432 358.410327,702.270448 C357.686498,702.620746 357.060957,703.115706 356.532347,703.753626 C356.312372,704.019089 356.119842,704.296446 355.954894,704.58577 C355.789918,704.296527 355.597363,704.019128 355.377356,703.753626 C354.848746,703.115706 354.223205,702.620746 353.499376,702.270448 C352.782325,701.923432 352.024745,701.75 351.226648,701.75 C349.764566,701.75 348.510316,702.286868 347.461243,703.354288 C346.913219,703.899002 346.497246,704.518742 346.207435,705.220014 C345.889707,705.965342 345.738146,706.727888 345.750727,707.51561 C345.763455,708.388382 345.94714,709.212916 346.303121,709.989977 C346.659881,710.768735 347.167854,711.426426 347.988878,712.122201 C348.191368,712.294689 349.002808,713.022293 350.42437,714.306643 C353.363751,716.98911 355.188086,718.647117 356.007587,719.284583 C356.494523,718.844633 357.778118,717.681712 359.858411,715.795862 C362.110653,713.75586 363.507451,712.488096 364.079286,711.966103 C364.734513,711.427626 365.244452,710.769942 365.609838,709.993594 C365.9764,709.214748 366.15888,708.385547 366.15888,707.506325 C366.15888,706.700016 366.0073,705.931368 365.703028,705.200583 C365.412457,704.49748 364.996484,703.87774 364.454682,703.339282 C363.401611,702.280272 362.146104,701.75 360.683055,701.75 Z" id="Path">
-                                                                    </path>
-                                                                </g>
-                                                            </g>
-                                                    </svg>
-                                                    <div className="gap_share"></div>
-                                                </div>
-                                                <div className="some_gap"></div>
-                                                    <div className="some_gap">
-                                                        <div class="style_share" id="share">
-                                                            <div>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" className="share_icon" fill="white">
-                                                                    <path fill-rule="evenodd" d="M15.033 12.047c.816 0 1.514.292 2.095.875A2.87 2.87 0 0 1 18 15.023a2.87 2.87 0 0 1-.872 2.102 2.852 2.852 0 0 1-2.095.875 2.852 2.852 0 0 1-2.094-.875 2.87 2.87 0 0 1-.872-2.102v-.2l-4.871-3.46a3.95 3.95 0 0 1-1.393 1.217 3.85 3.85 0 0 1-1.834.452c-1.096 0-2.031-.388-2.806-1.166C.388 11.088 0 10.15 0 9.05c0-1.1.388-2.038 1.163-2.815.775-.778 1.71-1.167 2.806-1.167 1.136 0 2.098.416 2.886 1.247l5.292-2.675a2.735 2.735 0 0 1-.08-.663c0-.818.29-1.519.872-2.102A2.852 2.852 0 0 1 15.033 0c.816 0 1.514.292 2.095.875A2.87 2.87 0 0 1 18 2.977a2.87 2.87 0 0 1-.872 2.101 2.852 2.852 0 0 1-2.095.875c-.895 0-1.643-.342-2.245-1.026L7.637 7.542c.2.483.3.985.3 1.508 0 .322-.04.644-.12.966l4.73 3.378c.282-.415.639-.744 1.073-.985a2.862 2.862 0 0 1 1.413-.362zM13.951 1.91a1.467 1.467 0 0 0-.441 1.076c0 .422.15.78.451 1.076.3.295.658.442 1.072.442.415 0 .772-.147 1.073-.442.3-.295.45-.654.45-1.076 0-.423-.15-.785-.45-1.086a1.462 1.462 0 0 0-1.073-.453 1.48 1.48 0 0 0-1.082.463zm-8.198 8.93a2.444 2.444 0 0 0 .741-1.79c0-.698-.247-1.295-.741-1.79a2.428 2.428 0 0 0-1.784-.745c-.695 0-1.29.248-1.784.744a2.444 2.444 0 0 0-.742 1.79c0 .697.247 1.294.742 1.79.494.496 1.089.744 1.784.744.695 0 1.29-.248 1.784-.744zm10.343 5.268c.307-.294.46-.653.46-1.075 0-.423-.15-.785-.45-1.087a1.462 1.462 0 0 0-1.073-.452c-.414 0-.771.15-1.072.452-.3.302-.451.664-.451 1.087 0 .422.15.78.451 1.075.3.295.658.443 1.072.443.415 0 .769-.148 1.063-.443z">
-                                                                    </path>
-                                                                </svg>
-                                                            </div>
-                                                            <div className="pADKZ6">
-                                                                <div className="overlay_icons">
-                                                                    <div id="#facebook">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g>
-                                                                            <path fill="#3B5998" d="M0 0H34V34H0z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path>
-                                                                            <path fill="#FFF" d="M14.652 26.152h3.303v-9.071h2.477l.49-2.835h-2.967v-2.054c0-.662.428-1.357 1.04-1.357h1.687V8h-2.067v.013c-3.235.117-3.9 1.99-3.957 3.958h-.006v2.275H13v2.835h1.652v9.071z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path></g></g></g></g>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div id="#twitter">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
-                                                                            <path fill="#55ACEE" d="M0 0H34V34H0z" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path>
-                                                                            <path fill="#FFF" d="M25.765 10.33c-.531.34-1.751.835-2.353.835-.687-.717-1.654-1.165-2.726-1.165-2.083 0-3.773 1.69-3.773 3.772 0 .289.034.571.096.842-2.826-.074-5.917-1.49-7.777-3.915-1.144 1.98-.154 4.182 1.144 4.984-.445.034-1.263-.05-1.648-.426-.025 1.314.606 3.055 2.91 3.687-.443.238-1.229.17-1.57.119.12 1.11 1.673 2.56 3.372 2.56-.606.7-2.884 1.97-5.44 1.566 1.736 1.056 3.76 1.668 5.901 1.668 6.086 0 10.813-4.932 10.558-11.017l-.001-.02.001-.048-.002-.056c.554-.378 1.298-1.049 1.829-1.93-.308.169-1.232.508-2.092.593.552-.298 1.37-1.274 1.571-2.05" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path></g></g></g></g></g>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="styles-copyLink-gK2TbP4i" id="#clipboard">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
-                                                                            <path fill="#59A015" d="M0 0H34V34H0z" transform="translate(-529 -1179) translate(326 661) translate(133 518) translate(70)"></path>
-                                                                            <path fill="#FFF" fill-rule="nonzero" d="M17.278 14.15c1.148 0 2.232.446 3.04 1.254l2.423 2.487c1.679 1.68 1.679 4.4 0 6.08-.85.828-1.935 1.253-3.04 1.253s-2.21-.425-3.04-1.254l-.786-.786c-.34-.34-.34-.872 0-1.212.34-.34.872-.34 1.212 0l.786.787c1.02 1.02 2.657 1.02 3.677 0s1.02-2.657 0-3.678l-2.444-2.444c-.489-.489-1.148-.765-1.828-.765-.68 0-1.34.276-1.828.765l-.893.893c-.34.34-.871.34-1.211 0-.34-.34-.34-.872 0-1.212l.892-.914c.808-.808 1.892-1.254 3.04-1.254zm-7.869-3.048c1.688-1.52 4.288-1.468 5.913.157l.787.787c.34.34.34.871 0 1.211-.34.34-.872.34-1.212 0l-.786-.786c-1-1-2.636-1-3.656 0l-.127.136c-.891 1.025-.849 2.565.127 3.541l2.444 2.423c.49.49 1.127.765 1.828.765.68 0 1.34-.276 1.828-.765l.893-.892c.34-.34.871-.34 1.212 0 .34.34.34.871 0 1.211l-.893.893c-.808.808-1.892 1.254-3.04 1.254-1.147 0-2.231-.446-3.04-1.254l-2.444-2.466c-1.657-1.658-1.657-4.378 0-6.058z" transform="translate(-529 -1179) translate(326 661) translate(133 518) translate(70)"></path></g></g></g></g></g>
-                                                                        </svg>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="gap_share"></div>
-                                            </div>
-                                            <div className="style_Kij7iMb">
-                                                <div className="style_full">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21" fill="white"><g fill="#FFF">
-                                                        <path d="M17.844 10.25l-5.562-3.596c-.156-.1-.353-.107-.516-.017-.161.09-.262.263-.262.45v7.19c0 .188.101.36.263.451.076.042.16.063.243.063.095 0 .19-.027.272-.08l5.562-3.595c.146-.094.234-.258.234-.433 0-.176-.088-.34-.234-.434zm-5.328 3.092v-5.32l4.114 2.66-4.114 2.66z"></path>
-                                                        <path d="M26.83 0H.47C.21 0 0 .203 0 .454v19.969c0 .25.21.453.47.453H26.83c.26 0 .471-.202.471-.453V.454c0-.251-.21-.454-.47-.454zM4.706 9.984H.94V5.9h3.766v4.084zm-3.766.908h3.766v4.085H.94v-4.085zm4.707 4.538V.908h16.004v19.061H5.648V15.43zm20.71-5.446h-3.765V5.9h3.766v4.084zm-3.765.908h3.766v4.085h-3.766v-4.085zM26.36.908v4.084h-3.766V.908h3.766zM.94.908h3.766v4.084H.94V.908zm0 19.06v-4.084h3.766v4.085H.94zm25.418 0h-3.766v-4.084h3.766v4.085z"></path></g>
-                                                    </svg>
-                                                    <h6 className="fullEpisode">Full episode</h6>
-                                                </div>
-                                            </div>
-                                    </div>
+                                    <Icons/>
                                 </div>
                             </div>
                             <div className="content_shorts2">
@@ -176,73 +111,12 @@ const Short =() => {
                                         <h4 className="video_title">Is Earth in Danger?</h4>
                                     </div>
                                     <div className="blank_space">
-                                        <div>Age Rating : UA-16+ | Contains : Foul Language Smoking Alcohol</div>
+                                        <div>Age Rating : UA-16+ | Contains : Foul Language Smoking Alcohol</div>   
                                     </div>
-                                    <div className="video_content_box">  
-                                        <div>
-                                            <img style={{width: "100%", height: "100%"}} src="data:image/jpeg;base64,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"></img>
-                                        </div>
+                                    <div className="videoShow1">
+                                        <ShortVideo/>
                                     </div>
-                                    <div className="video_sharing">
-                                        <div className="sharing_opt">
-                                            <div className="optionals">
-                                                <div className="style_heart" id="unLike">
-                                                    <svg width="22px" height="20px" viewBox="0 0 22 20" className="heart_icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                                        <desc>Created with Sketch.</desc>
-                                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                            <g id="Shorts-Copy" transform="translate(-345.000000, -701.000000)" stroke="white" stroke-width="1.5">
-                                                                <path d="M360.683055,701.75 C359.884958,701.75 359.127378,701.923432 358.410327,702.270448 C357.686498,702.620746 357.060957,703.115706 356.532347,703.753626 C356.312372,704.019089 356.119842,704.296446 355.954894,704.58577 C355.789918,704.296527 355.597363,704.019128 355.377356,703.753626 C354.848746,703.115706 354.223205,702.620746 353.499376,702.270448 C352.782325,701.923432 352.024745,701.75 351.226648,701.75 C349.764566,701.75 348.510316,702.286868 347.461243,703.354288 C346.913219,703.899002 346.497246,704.518742 346.207435,705.220014 C345.889707,705.965342 345.738146,706.727888 345.750727,707.51561 C345.763455,708.388382 345.94714,709.212916 346.303121,709.989977 C346.659881,710.768735 347.167854,711.426426 347.988878,712.122201 C348.191368,712.294689 349.002808,713.022293 350.42437,714.306643 C353.363751,716.98911 355.188086,718.647117 356.007587,719.284583 C356.494523,718.844633 357.778118,717.681712 359.858411,715.795862 C362.110653,713.75586 363.507451,712.488096 364.079286,711.966103 C364.734513,711.427626 365.244452,710.769942 365.609838,709.993594 C365.9764,709.214748 366.15888,708.385547 366.15888,707.506325 C366.15888,706.700016 366.0073,705.931368 365.703028,705.200583 C365.412457,704.49748 364.996484,703.87774 364.454682,703.339282 C363.401611,702.280272 362.146104,701.75 360.683055,701.75 Z" id="Path">
-                                                                </path>
-                                                            </g></g>
-                                                    </svg>
-                                                    <div className="gap_share"></div>
-                                                </div>
-                                                <div className="some_gap"></div>
-                                                <div className="some_gap">
-                                                    <div class="style_share" id="share">
-                                                        <div>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" className="share_icon" fill="white">
-                                                                <path fill-rule="evenodd" d="M15.033 12.047c.816 0 1.514.292 2.095.875A2.87 2.87 0 0 1 18 15.023a2.87 2.87 0 0 1-.872 2.102 2.852 2.852 0 0 1-2.095.875 2.852 2.852 0 0 1-2.094-.875 2.87 2.87 0 0 1-.872-2.102v-.2l-4.871-3.46a3.95 3.95 0 0 1-1.393 1.217 3.85 3.85 0 0 1-1.834.452c-1.096 0-2.031-.388-2.806-1.166C.388 11.088 0 10.15 0 9.05c0-1.1.388-2.038 1.163-2.815.775-.778 1.71-1.167 2.806-1.167 1.136 0 2.098.416 2.886 1.247l5.292-2.675a2.735 2.735 0 0 1-.08-.663c0-.818.29-1.519.872-2.102A2.852 2.852 0 0 1 15.033 0c.816 0 1.514.292 2.095.875A2.87 2.87 0 0 1 18 2.977a2.87 2.87 0 0 1-.872 2.101 2.852 2.852 0 0 1-2.095.875c-.895 0-1.643-.342-2.245-1.026L7.637 7.542c.2.483.3.985.3 1.508 0 .322-.04.644-.12.966l4.73 3.378c.282-.415.639-.744 1.073-.985a2.862 2.862 0 0 1 1.413-.362zM13.951 1.91a1.467 1.467 0 0 0-.441 1.076c0 .422.15.78.451 1.076.3.295.658.442 1.072.442.415 0 .772-.147 1.073-.442.3-.295.45-.654.45-1.076 0-.423-.15-.785-.45-1.086a1.462 1.462 0 0 0-1.073-.453 1.48 1.48 0 0 0-1.082.463zm-8.198 8.93a2.444 2.444 0 0 0 .741-1.79c0-.698-.247-1.295-.741-1.79a2.428 2.428 0 0 0-1.784-.745c-.695 0-1.29.248-1.784.744a2.444 2.444 0 0 0-.742 1.79c0 .697.247 1.294.742 1.79.494.496 1.089.744 1.784.744.695 0 1.29-.248 1.784-.744zm10.343 5.268c.307-.294.46-.653.46-1.075 0-.423-.15-.785-.45-1.087a1.462 1.462 0 0 0-1.073-.452c-.414 0-.771.15-1.072.452-.3.302-.451.664-.451 1.087 0 .422.15.78.451 1.075.3.295.658.443 1.072.443.415 0 .769-.148 1.063-.443z">
-                                                                </path>
-                                                            </svg>
-                                                        </div>
-                                                        <div className="pADKZ6">
-                                                            <div className="overlay_icons">
-                                                                <div id="#facebook">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g>
-                                                                        <path fill="#3B5998" d="M0 0H34V34H0z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path>
-                                                                        <path fill="#FFF" d="M14.652 26.152h3.303v-9.071h2.477l.49-2.835h-2.967v-2.054c0-.662.428-1.357 1.04-1.357h1.687V8h-2.067v.013c-3.235.117-3.9 1.99-3.957 3.958h-.006v2.275H13v2.835h1.652v9.071z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path></g></g></g></g>
-                                                                    </svg>
-                                                                </div>
-                                                                <div id="#twitter">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
-                                                                        <path fill="#55ACEE" d="M0 0H34V34H0z" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path>
-                                                                        <path fill="#FFF" d="M25.765 10.33c-.531.34-1.751.835-2.353.835-.687-.717-1.654-1.165-2.726-1.165-2.083 0-3.773 1.69-3.773 3.772 0 .289.034.571.096.842-2.826-.074-5.917-1.49-7.777-3.915-1.144 1.98-.154 4.182 1.144 4.984-.445.034-1.263-.05-1.648-.426-.025 1.314.606 3.055 2.91 3.687-.443.238-1.229.17-1.57.119.12 1.11 1.673 2.56 3.372 2.56-.606.7-2.884 1.97-5.44 1.566 1.736 1.056 3.76 1.668 5.901 1.668 6.086 0 10.813-4.932 10.558-11.017l-.001-.02.001-.048-.002-.056c.554-.378 1.298-1.049 1.829-1.93-.308.169-1.232.508-2.092.593.552-.298 1.37-1.274 1.571-2.05" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path></g></g></g></g></g>
-                                                                    </svg>
-                                                                </div>
-                                                                <div class="styles-copyLink-gK2TbP4i" id="#clipboard">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
-                                                                        <path fill="#59A015" d="M0 0H34V34H0z" transform="translate(-529 -1179) translate(326 661) translate(133 518) translate(70)"></path>
-                                                                        <path fill="#FFF" fill-rule="nonzero" d="M17.278 14.15c1.148 0 2.232.446 3.04 1.254l2.423 2.487c1.679 1.68 1.679 4.4 0 6.08-.85.828-1.935 1.253-3.04 1.253s-2.21-.425-3.04-1.254l-.786-.786c-.34-.34-.34-.872 0-1.212.34-.34.872-.34 1.212 0l.786.787c1.02 1.02 2.657 1.02 3.677 0s1.02-2.657 0-3.678l-2.444-2.444c-.489-.489-1.148-.765-1.828-.765-.68 0-1.34.276-1.828.765l-.893.893c-.34.34-.871.34-1.211 0-.34-.34-.34-.872 0-1.212l.892-.914c.808-.808 1.892-1.254 3.04-1.254zm-7.869-3.048c1.688-1.52 4.288-1.468 5.913.157l.787.787c.34.34.34.871 0 1.211-.34.34-.872.34-1.212 0l-.786-.786c-1-1-2.636-1-3.656 0l-.127.136c-.891 1.025-.849 2.565.127 3.541l2.444 2.423c.49.49 1.127.765 1.828.765.68 0 1.34-.276 1.828-.765l.893-.892c.34-.34.871-.34 1.212 0 .34.34.34.871 0 1.211l-.893.893c-.808.808-1.892 1.254-3.04 1.254-1.147 0-2.231-.446-3.04-1.254l-2.444-2.466c-1.657-1.658-1.657-4.378 0-6.058z" transform="translate(-529 -1179) translate(326 661) translate(133 518) translate(70)"></path></g></g></g></g></g>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="gap_share"></div>
-                                        <div className="style_Kij7iMb">
-                                            <div className="style_full">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21" fill="white"><g fill="#FFF">
-                                                    <path d="M17.844 10.25l-5.562-3.596c-.156-.1-.353-.107-.516-.017-.161.09-.262.263-.262.45v7.19c0 .188.101.36.263.451.076.042.16.063.243.063.095 0 .19-.027.272-.08l5.562-3.595c.146-.094.234-.258.234-.433 0-.176-.088-.34-.234-.434zm-5.328 3.092v-5.32l4.114 2.66-4.114 2.66z"></path>
-                                                    <path d="M26.83 0H.47C.21 0 0 .203 0 .454v19.969c0 .25.21.453.47.453H26.83c.26 0 .471-.202.471-.453V.454c0-.251-.21-.454-.47-.454zM4.706 9.984H.94V5.9h3.766v4.084zm-3.766.908h3.766v4.085H.94v-4.085zm4.707 4.538V.908h16.004v19.061H5.648V15.43zm20.71-5.446h-3.765V5.9h3.766v4.084zm-3.765.908h3.766v4.085h-3.766v-4.085zM26.36.908v4.084h-3.766V.908h3.766zM.94.908h3.766v4.084H.94V.908zm0 19.06v-4.084h3.766v4.085H.94zm25.418 0h-3.766v-4.084h3.766v4.085z"></path></g>
-                                                </svg>
-                                                <h6 className="fullEpisode">Full episode</h6>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Icons/>
                                 </div>
                             </div>
                             <div className="content_shorts3">
@@ -250,80 +124,18 @@ const Short =() => {
                                         <div id="videoTitle">
                                             <h4 className="video_title">5 Full Facts about Daily Inventions</h4>
                                         </div>
-                                    <div className="blank_space">
-                                        <div>Age Rating : U</div>
+                                        <div className="blank_space">
+                                            <div>Age Rating : U</div>
                                         </div>
-                                    <div className="video_content_box">  
-                                        <div>
-                                            <img style={{width: "100%", height: "460px"}} src="https://cdn.theatlantic.com/thumbor/NAn6iBqudQhgEoL_9om4JFSPiOo=/162x21:1415x961/1200x900/media/img/2013/10/11/innovators-top/original.jpg"></img>
+                                        <div className="videoShow1">
+                                            <ShortVideo/>
                                         </div>
-                                    </div>
-                                    <div className="video_sharing">
-                                        <div className="sharing_opt">
-                                            <div className="optionals">
-                                                <div className="style_heart" id="unLike">
-                                                    <svg width="22px" height="20px" viewBox="0 0 22 20" className="heart_icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                                        <desc>Created with Sketch.</desc>
-                                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                            <g id="Shorts-Copy" transform="translate(-345.000000, -701.000000)" stroke="white" stroke-width="1.5">
-                                                                <path d="M360.683055,701.75 C359.884958,701.75 359.127378,701.923432 358.410327,702.270448 C357.686498,702.620746 357.060957,703.115706 356.532347,703.753626 C356.312372,704.019089 356.119842,704.296446 355.954894,704.58577 C355.789918,704.296527 355.597363,704.019128 355.377356,703.753626 C354.848746,703.115706 354.223205,702.620746 353.499376,702.270448 C352.782325,701.923432 352.024745,701.75 351.226648,701.75 C349.764566,701.75 348.510316,702.286868 347.461243,703.354288 C346.913219,703.899002 346.497246,704.518742 346.207435,705.220014 C345.889707,705.965342 345.738146,706.727888 345.750727,707.51561 C345.763455,708.388382 345.94714,709.212916 346.303121,709.989977 C346.659881,710.768735 347.167854,711.426426 347.988878,712.122201 C348.191368,712.294689 349.002808,713.022293 350.42437,714.306643 C353.363751,716.98911 355.188086,718.647117 356.007587,719.284583 C356.494523,718.844633 357.778118,717.681712 359.858411,715.795862 C362.110653,713.75586 363.507451,712.488096 364.079286,711.966103 C364.734513,711.427626 365.244452,710.769942 365.609838,709.993594 C365.9764,709.214748 366.15888,708.385547 366.15888,707.506325 C366.15888,706.700016 366.0073,705.931368 365.703028,705.200583 C365.412457,704.49748 364.996484,703.87774 364.454682,703.339282 C363.401611,702.280272 362.146104,701.75 360.683055,701.75 Z" id="Path">
-                                                                </path>
-                                                            </g></g>
-                                                    </svg>
-                                                    <div className="gap_share"></div>
-                                                </div>
-                                                <div className="some_gap"></div>
-                                                <div className="some_gap">
-                                                    <div class="style_share" id="share">
-                                                        <div>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" className="share_icon" fill="white">
-                                                                <path fill-rule="evenodd" d="M15.033 12.047c.816 0 1.514.292 2.095.875A2.87 2.87 0 0 1 18 15.023a2.87 2.87 0 0 1-.872 2.102 2.852 2.852 0 0 1-2.095.875 2.852 2.852 0 0 1-2.094-.875 2.87 2.87 0 0 1-.872-2.102v-.2l-4.871-3.46a3.95 3.95 0 0 1-1.393 1.217 3.85 3.85 0 0 1-1.834.452c-1.096 0-2.031-.388-2.806-1.166C.388 11.088 0 10.15 0 9.05c0-1.1.388-2.038 1.163-2.815.775-.778 1.71-1.167 2.806-1.167 1.136 0 2.098.416 2.886 1.247l5.292-2.675a2.735 2.735 0 0 1-.08-.663c0-.818.29-1.519.872-2.102A2.852 2.852 0 0 1 15.033 0c.816 0 1.514.292 2.095.875A2.87 2.87 0 0 1 18 2.977a2.87 2.87 0 0 1-.872 2.101 2.852 2.852 0 0 1-2.095.875c-.895 0-1.643-.342-2.245-1.026L7.637 7.542c.2.483.3.985.3 1.508 0 .322-.04.644-.12.966l4.73 3.378c.282-.415.639-.744 1.073-.985a2.862 2.862 0 0 1 1.413-.362zM13.951 1.91a1.467 1.467 0 0 0-.441 1.076c0 .422.15.78.451 1.076.3.295.658.442 1.072.442.415 0 .772-.147 1.073-.442.3-.295.45-.654.45-1.076 0-.423-.15-.785-.45-1.086a1.462 1.462 0 0 0-1.073-.453 1.48 1.48 0 0 0-1.082.463zm-8.198 8.93a2.444 2.444 0 0 0 .741-1.79c0-.698-.247-1.295-.741-1.79a2.428 2.428 0 0 0-1.784-.745c-.695 0-1.29.248-1.784.744a2.444 2.444 0 0 0-.742 1.79c0 .697.247 1.294.742 1.79.494.496 1.089.744 1.784.744.695 0 1.29-.248 1.784-.744zm10.343 5.268c.307-.294.46-.653.46-1.075 0-.423-.15-.785-.45-1.087a1.462 1.462 0 0 0-1.073-.452c-.414 0-.771.15-1.072.452-.3.302-.451.664-.451 1.087 0 .422.15.78.451 1.075.3.295.658.443 1.072.443.415 0 .769-.148 1.063-.443z">
-                                                                </path>
-                                                            </svg>
-                                                        </div>
-                                                        <div className="pADKZ6">
-                                                            <div className="overlay_icons">
-                                                                <div id="#facebook">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g>
-                                                                        <path fill="#3B5998" d="M0 0H34V34H0z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path>
-                                                                        <path fill="#FFF" d="M14.652 26.152h3.303v-9.071h2.477l.49-2.835h-2.967v-2.054c0-.662.428-1.357 1.04-1.357h1.687V8h-2.067v.013c-3.235.117-3.9 1.99-3.957 3.958h-.006v2.275H13v2.835h1.652v9.071z" transform="translate(-459 -1179) translate(326 661) translate(133 518)"></path></g></g></g></g>
-                                                                    </svg>
-                                                                </div>
-                                                                <div id="#twitter">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
-                                                                        <path fill="#55ACEE" d="M0 0H34V34H0z" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path>
-                                                                        <path fill="#FFF" d="M25.765 10.33c-.531.34-1.751.835-2.353.835-.687-.717-1.654-1.165-2.726-1.165-2.083 0-3.773 1.69-3.773 3.772 0 .289.034.571.096.842-2.826-.074-5.917-1.49-7.777-3.915-1.144 1.98-.154 4.182 1.144 4.984-.445.034-1.263-.05-1.648-.426-.025 1.314.606 3.055 2.91 3.687-.443.238-1.229.17-1.57.119.12 1.11 1.673 2.56 3.372 2.56-.606.7-2.884 1.97-5.44 1.566 1.736 1.056 3.76 1.668 5.901 1.668 6.086 0 10.813-4.932 10.558-11.017l-.001-.02.001-.048-.002-.056c.554-.378 1.298-1.049 1.829-1.93-.308.169-1.232.508-2.092.593.552-.298 1.37-1.274 1.571-2.05" transform="translate(-494 -1179) translate(326 661) translate(133 518) translate(35)"></path></g></g></g></g></g>
-                                                                    </svg>
-                                                                </div>
-                                                                <div class="styles-copyLink-gK2TbP4i" id="#clipboard">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" className="icons_ofshare"><g fill="none" fill-rule="evenodd"><g><g><g><g>
-                                                                        <path fill="#59A015" d="M0 0H34V34H0z" transform="translate(-529 -1179) translate(326 661) translate(133 518) translate(70)"></path>
-                                                                        <path fill="#FFF" fill-rule="nonzero" d="M17.278 14.15c1.148 0 2.232.446 3.04 1.254l2.423 2.487c1.679 1.68 1.679 4.4 0 6.08-.85.828-1.935 1.253-3.04 1.253s-2.21-.425-3.04-1.254l-.786-.786c-.34-.34-.34-.872 0-1.212.34-.34.872-.34 1.212 0l.786.787c1.02 1.02 2.657 1.02 3.677 0s1.02-2.657 0-3.678l-2.444-2.444c-.489-.489-1.148-.765-1.828-.765-.68 0-1.34.276-1.828.765l-.893.893c-.34.34-.871.34-1.211 0-.34-.34-.34-.872 0-1.212l.892-.914c.808-.808 1.892-1.254 3.04-1.254zm-7.869-3.048c1.688-1.52 4.288-1.468 5.913.157l.787.787c.34.34.34.871 0 1.211-.34.34-.872.34-1.212 0l-.786-.786c-1-1-2.636-1-3.656 0l-.127.136c-.891 1.025-.849 2.565.127 3.541l2.444 2.423c.49.49 1.127.765 1.828.765.68 0 1.34-.276 1.828-.765l.893-.892c.34-.34.871-.34 1.212 0 .34.34.34.871 0 1.211l-.893.893c-.808.808-1.892 1.254-3.04 1.254-1.147 0-2.231-.446-3.04-1.254l-2.444-2.466c-1.657-1.658-1.657-4.378 0-6.058z" transform="translate(-529 -1179) translate(326 661) translate(133 518) translate(70)"></path></g></g></g></g></g>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gap_share"></div>
-                                        </div>
-                                        <div className="style_Kij7iMb">
-                                            <div className="style_full">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21" fill="white"><g fill="#FFF">
-                                                    <path d="M17.844 10.25l-5.562-3.596c-.156-.1-.353-.107-.516-.017-.161.09-.262.263-.262.45v7.19c0 .188.101.36.263.451.076.042.16.063.243.063.095 0 .19-.027.272-.08l5.562-3.595c.146-.094.234-.258.234-.433 0-.176-.088-.34-.234-.434zm-5.328 3.092v-5.32l4.114 2.66-4.114 2.66z"></path>
-                                                    <path d="M26.83 0H.47C.21 0 0 .203 0 .454v19.969c0 .25.21.453.47.453H26.83c.26 0 .471-.202.471-.453V.454c0-.251-.21-.454-.47-.454zM4.706 9.984H.94V5.9h3.766v4.084zm-3.766.908h3.766v4.085H.94v-4.085zm4.707 4.538V.908h16.004v19.061H5.648V15.43zm20.71-5.446h-3.765V5.9h3.766v4.084zm-3.765.908h3.766v4.085h-3.766v-4.085zM26.36.908v4.084h-3.766V.908h3.766zM.94.908h3.766v4.084H.94V.908zm0 19.06v-4.084h3.766v4.085H.94zm25.418 0h-3.766v-4.084h3.766v4.085z"></path></g>
-                                                </svg>
-                                                <h6 className="fullEpisode">Full episode</h6>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <Icons/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
                 <div className="shorts_rightBox_section">
                     <div className="discov_Ad">

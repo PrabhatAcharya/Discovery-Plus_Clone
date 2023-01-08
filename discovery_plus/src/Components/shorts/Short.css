@@ -16,13 +16,13 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 40px;
-    margin-left: -5px;
+    margin-left: 5px;
     gap: 0px;
     /* background-color: aqua; */
 }
 .category_cntnt{
     position: sticky;
-    width: 258px;
+    width: 300px;
     margin: 0px;
     margin-top: 25px;
     /* background-color: red; */
@@ -36,8 +36,9 @@
 }
 .category_heading_span{
     padding: 0px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight:500;
+    font-weight: bold;
     color: #ffffff;
     font-family: "Roboto-Bold", sans-serif;
 }
@@ -51,18 +52,18 @@
 .subcateg_line{
     border-bottom: solid 1px #30343b;
     margin: 0px;
-    width: 221px;
+    width: 260px;
     height: 1px;
 }
 .button_categ{
     border: none;
-    width: 258px;
+    width: 300px;
     background-color: #121317;
     height: auto;
     margin: 0px;
 }
 .sub_categ {
-    height: 40px;
+    height: 50px;
     padding-left: 35px;
     align-items: center;
     justify-content: flex-start;
@@ -73,7 +74,7 @@
 }
 .category_opt_all{
     font-family: "Roboto-Regular", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.33;
     position: relative;
     color: #838991;
@@ -90,26 +91,51 @@
 .subcateg_line2 {
     border-bottom: solid 1px #30343b;
     margin: 0px;
-    width: 221px;
+    width: 260px;
+    height: 1px;
+}
+.subcateg_line_highlight{
+    border-bottom: solid 1px #ffffff;
+    margin: 0px;
+    width: 260px;
     height: 1px;
 }
 .sub_categ > span:hover{
     color: #ffffff;
 }
+#highlight{
+    color: #ffffff;
+}
+
+
 
 
 /* Shorts Middle Section */
+
 .short_videos_blk {
     padding-top: 15px;
+    height: auto;
 }
 .content_shorts {
-    width: 820px;
+    width: 1050px;
+}
+.content_shorts2{
+    margin-top: 150px;
 }
 .video_wrapper1 {
     margin-top: 0px;
     margin-bottom: 20px;
+    height: 500px;
     background-color: #262931;
 }
+.videoShow1{
+    display: block;
+    position: relative;
+    padding-top: -80px;
+    height: 500px;
+    overflow: hidden;
+}
+
 .video_wrapper2 {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -127,6 +153,15 @@
     background-color: #121317;
 }
 .content_shorts3:hover .video_wrapper3 {
+    background-color: #121317;
+}
+.content_shorts1:hover .video_sharing{
+    background-color: #121317;
+}
+.content_shorts2:hover .video_sharing{
+    background-color: #121317;
+}
+.content_shorts3:hover .video_sharing{
     background-color: #121317;
 }
 .video_title {
@@ -159,7 +194,11 @@
 .video_sharing {
     display: flex;
     margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #262931;
     justify-content: space-between;
+    /* background-color: red; */
 }
 .sharing_opt {
     display: flex;
@@ -171,10 +210,10 @@
 }
 .style_heart {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-tap-highlight-color: transparent;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
 }
 .heart_icon {
     width: 24px;
@@ -238,22 +277,24 @@
     padding-left: 10px;
 }
 
+
+
 /* Shorts RightBox Section */
+
 .shorts_rightBox_section{
-    width: 258px;
+    width: 300px;
     top: 90px;
     height: 374px;
     margin-top: 80px;
-    margin-right: -3px;
-    /* margin: 0px 18px; */
-    /* background-color:blue; */
+    margin-right: 10px;
 }
 .discov_Ad {
     position: sticky;
+    width: 300px;
 }
 .ad_image {
-    width: 257px;
-    height: 374px;
+    width: 130%;
+    height: 450px;
     object-fit: contain;
 }
 .ad_content {
@@ -261,7 +302,7 @@
     bottom: 0;
     height: 156px;
     background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.71) 37%, rgba(0, 0, 0, 0.92) 97% );
-    width: 257px;
+    width: 300px;
     justify-content: center;
     align-items: center;
 }
@@ -269,26 +310,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
 }
 .text_contain{
     font-family: "Roboto-Regular", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.38;
     text-align: center;
     color: #ffffff;
-    width: 165px;
-    padding: 2px;
+    width: 190px;
+    padding-bottom: 5px;
     /* background-color: pink; */
 }
 .textContainer_gapline {
-    width: 200px;
+    width: 250px;
     height: 2.5px;
     background-color: #22252a;
+    /* background-color: aquamarine; */
 }
 .text_available {
     font-family: "Roboto-Regular", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.44;
     text-align: center;
     color: #ffffff;
