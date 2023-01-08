@@ -1,59 +1,37 @@
-
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-
+import React from 'react'
+import { Link } from 'react-router-dom'
 import "./signin.css"
+import Otp from "../Login&Signup/Otp"
+const Signin = () => {
+  return (
+    <div className='body'>
+      
+       <h2>Sign In Now</h2>
 
-
-
-
-export const Signin= () => {
-   
-    const [ip,setIp] = useState("");
-    const [mno,setMno] = useState("");
-    const navigate = useNavigate()
-    
-
-    const handleChange = (e) => {
-        setIp(e.target.value)
-    }
-    
-     
-    const getotp = () =>
-    {
-        
-        if(ip.length === 10)
-        {
-            navigate('/signin2', { replace: true });     
-        }
-        else
-        {
-            alert("Enter Valid Number ")
-        }
-    }
-
-    return (
-         <>
-        
-         <div id="centerbox">
-             <div>
-               <span>Sign In Now</span>
-            <p> Save your preferences & discover great  </p>
-            <p>recommendations</p>
-            <input placeholder="Mobile Number" onChange={ handleChange }/><br/>
-            <button onClick={getotp} >Get OTP</button>
-
-            
-            <p>OR</p>
-            
-            <p >View other sign in Options</p>
-             <p>By signing in, you agree to our</p>
-           <p> Privacy Policy & Terms of Use</p>
-            </div>
+       <div className='Login-container'>
+       <div className='top_heading'> <p>Please sign in with your mobile number</p></div>
+      
+       <form>
+       <div className='input_field'>
+       
+       <input placeholder='Mobile Number'/>
+       </div>
+        <div className='button_otp'>
+        <Link to="/otp">
+        <button>Get otp</button>
+        </Link>
+       
         </div>
-          
-                
-               
-        </>
-    );  
-};
+       
+       </form>
+       </div>
+       <div className='bottom_option'>
+       <p>Social sign in only for</p>
+       <Link style={{color:"skyblue"}}>Existing user ></Link>
+      <p>By signing in, you agree to our Privacy Policy & Terms of Use</p>
+       </div>
+    </div>
+  )
+}
+
+export default Signin

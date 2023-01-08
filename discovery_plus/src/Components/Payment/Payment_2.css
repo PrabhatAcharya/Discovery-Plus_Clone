@@ -1,0 +1,45 @@
+.payment_body11{
+    background-color: gray;
+    height:850px;
+}
+.payment_container1{
+    border: 1px solid black;
+    height: 720px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    background: #121317;
+}
+.gap77{
+    height:100px;
+    background-color:grey
+}
+.gap77 img{
+    width:200px;
+    margin-top: 20px;
+}
+.image_section1 img{
+    margin-top: 30px;
+    margin-left: 5px;
+
+}
+.head_para1{
+    text-align: center;
+    margin-right: 50px;
+    color:aliceblue;
+    font-size: 20px;
+}
+.amt_section1{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+.exp{
+    display: flex;
+}
+.exp span input{
+    width: 50%;
+    border:0 0 1px 0;
+}

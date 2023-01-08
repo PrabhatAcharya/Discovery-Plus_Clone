@@ -1,0 +1,51 @@
+.body1{
+    background-color:grey;
+    height: 650px;
+    justify-content: center;
+    
+}
+.voucher_container{
+    width: 650px;
+    height:350px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: black;
+  
+}
+
+.image_part{
+    justify-content: center;
+    text-align: center;
+}
+.voucher_container div img {
+    width: 200px;
+    margin-top: 30px;
+}
+.gap1{
+    padding-top: 80px;
+}
+div h1{
+    color: white;
+}
+.voucher_heading h1{
+    margin-left: 40px;
+}
+br{
+    background-color: gray;
+}
+div p{
+color: gray;
+margin-left: 40px;
+}
+div input{
+    padding: 10px;
+    margin-left: 37px;
+    width: 80%;
+    background-color: black;
+    border:0 0 1px 0;
+    color:white;
+}
+div button{
+  width: 85%;
+  margin-left: 34px;
+}
