@@ -266,7 +266,7 @@ export const Explore=()=>{
          <div className="live-grid">
 
          <div>
-            <Link to="">
+            <Link to="/home">
            <div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Bbc})` }}>
                  <div className="background"></div>

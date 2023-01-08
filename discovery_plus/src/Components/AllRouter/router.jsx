@@ -12,6 +12,7 @@ function AllRouter() {
     <div>
       <Routes>
         <Route path="" element={<Home/>}/>
+        <Route path="/home" element={<Home/>}/>
         <Route path='/explore's element={<Explore/>}/>
         <Route path='/kids' element={<Kids/>} />
         <Route path='/watch' element={<Watch/>}/>
