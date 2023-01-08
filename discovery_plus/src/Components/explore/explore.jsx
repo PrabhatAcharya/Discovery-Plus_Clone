@@ -18,6 +18,7 @@
 
 //     </>
 // }
+// https://www.discoveryplus.in/channel/discovery-channel?liveStream=true
 import React from "react";
 
 import AnE from "./Images/a&e_explore.png"
@@ -38,6 +39,8 @@ import Turbo from "./Images/turbo_explore.jpg";
 import "./CSS/explore.css"
 
 
+
+
 export const Explore=()=>{
 
     return <>
@@ -49,7 +52,7 @@ export const Explore=()=>{
              <h6 className="heading">Live Channels</h6>
          </div>
          <div className="live-grid">
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Sci})` }}>
                <div className="img_details">
@@ -67,7 +70,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Discov})` }}>
                <div className="img_details">
@@ -85,7 +88,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Invest})` }}>
                <div className="img_details">
@@ -103,7 +106,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Animal})` }}>
                <div className="img_details">
@@ -121,7 +124,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Tlc})` }}>
                <div className="img_details">
@@ -157,7 +160,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Turbo})` }}>
                <div className="img_details">
@@ -175,7 +178,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Euro})` }}>
                <div className="img_details">
@@ -193,7 +196,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Food})` }}>
                <div className="img_details">
@@ -211,7 +214,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Dmax})` }}>
                <div className="img_details">
@@ -229,7 +232,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Trvl})` }}>
                <div className="img_details">
@@ -260,21 +263,25 @@ export const Explore=()=>{
          <div className="live-grid">
 
          <div>
-             <a className="blk2_subs" href=""><div className="blk2_height">
+             {/* <Link to="/Home"> */}
+                <div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Bbc})` }}>
                  <div className="background"></div>
              </div>
              </div>
-             </a>
+             {/* </Link> */}
+             
             
          </div>
          <div> 
-             <a className="blk2_subs" href=""><div className="blk2_height">
+           
+             <div className="blk2_height">
+
              <div className="blk2_contain" style={{ backgroundImage:`url(${AnE})` }}>
                  <div className="background"></div>
              </div>
              </div>
-             </a>
+             
          </div>
          <div>
              <a className="blk2_subs" href=""><div className="blk2_height">
