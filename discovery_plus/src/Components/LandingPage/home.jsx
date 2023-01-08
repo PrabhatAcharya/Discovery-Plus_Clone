@@ -6,7 +6,7 @@ import { ShowYouLove } from "./showYouLove"
 import { IndiaHistory } from "./IndiaHistory"
 import { NewlyAddedShows } from "./Newly"
 import { StreamForFree } from "./streamForFree"
-// import {Footer} from"./footer"
+
 export const Home=()=> {
     return (
     <>
