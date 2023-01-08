@@ -6,6 +6,7 @@ import HomevedioPlay from '../LandingPage/HomevedioPlay'
 import Kids from '../Kids_componanrts/Kids'
 import Video_prem from '../Kids_componanrts/video_prem'
 import { Home } from '../LandingPage/home'
+import { Explore } from '../explore/explore'
 
 
 function AllRouter() {
@@ -14,6 +15,7 @@ function AllRouter() {
       <Routes>
         <Route path="" element={<Home/>}/>
         <Route path='' element={<Home/>} />
+        <Route path='/explore' element={<Explore/>}/>
         <Route path='/kids' element={<Kids/>} />
         <Route path='/watch' element={<Watch/>}/>
         <Route path='/shorts' element={<Short/>} />
@@ -22,6 +24,7 @@ function AllRouter() {
         {/* <Route path='/premium' element={<Premium/>}/> */}
         <Route path='/shorts' element={<Short/>}/>
         <Route path='/videopremium' element={<Video_prem/>}/>
+        <Route path='*' element={<div>Not Found</div>}/>
       </Routes>
     </div>
   )
