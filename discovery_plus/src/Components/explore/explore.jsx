@@ -36,6 +36,10 @@ import Tlc from "./Images/tlc_explore.png";
 import Trvl from "./Images/trvl_explore.png";
 import Turbo from "./Images/turbo_explore.jpg";
 import "./CSS/explore.css"
+import { Link } from "react-router-dom";
+import Short from "../shorts/short";
+import {Kids} from "../Kids_componanrts/Kids"
+
 
 
 export const Explore=()=>{
@@ -49,11 +53,11 @@ export const Explore=()=>{
              <h6 className="heading">Live Channels</h6>
          </div>
          <div className="live-grid">
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Sci})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -67,11 +71,11 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Discov})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -85,11 +89,11 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Invest})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -103,11 +107,11 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Animal})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -121,11 +125,11 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Tlc})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -139,11 +143,11 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Kid})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -161,7 +165,7 @@ export const Explore=()=>{
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Turbo})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -175,11 +179,11 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Euro})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -193,11 +197,11 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Food})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -209,13 +213,15 @@ export const Explore=()=>{
                                  </g></g></g></g></svg>
                </div>
               </div>  
+
                    </div> 
+
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Dmax})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -229,11 +235,11 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Trvl})` }}>
                <div className="img_details">
-               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="23" viewBox="0 0 64 23" className="live_style"><defs>
+               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 64 23" className="live_style"><defs>
                      <filter id="bidwahrx2a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.101961 0 0 0 0 0.109804 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix></filter>
                      </defs><g fill="none" fill-rule="evenodd"><g><g transform="translate(-443 -154) translate(443 154)">
                          <rect width="63.588" height="23" fill="#78C54A" fill-rule="nonzero" rx="2.1"></rect><g>
@@ -248,49 +254,58 @@ export const Explore=()=>{
                    </div> 
           </a> 
              
-            
-
          </div>
 
          </div>
 
          <div className="block2">
-         <div id="exploreHeader"> <h6 className="heading" >Explore Shows and Full Episodes!</h6></div>
+        
+        <div id="exploreHeader"> <h6 className="heading" >Explore Shows and Full Episodes!</h6></div>
+        
 
          <div className="live-grid">
 
          <div>
-             <a className="blk2_subs" href=""><div className="blk2_height">
+            <Link to="/home">
+           <div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Bbc})` }}>
                  <div className="background"></div>
              </div>
              </div>
-             </a>
+             
+             </Link>
             
          </div>
          <div> 
+            <Link to="/kids">
              <a className="blk2_subs" href=""><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${AnE})` }}>
                  <div className="background"></div>
              </div>
              </div>
              </a>
+             </Link>
          </div>
          <div>
+            <Link to="/shorts">
              <a className="blk2_subs" href=""><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${All_exp})` }}>
                  <div className="background"></div>
              </div>
              </div>
              </a>
+             </Link>
+
          </div>
-         <div>
+         <div>  
+            <Link to="/shorts">
              <a className="blk2_subs" href=""><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Mind})` }}>
                  <div className="background"></div>
              </div>
              </div>
              </a>
+             </Link>
          </div>
          </div>
         
