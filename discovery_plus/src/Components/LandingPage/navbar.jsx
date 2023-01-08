@@ -9,9 +9,10 @@
     
     return (
          <>
-        
+       
             <Flex bg="black" alignItems="center" h="60px"gap={7} justifyContent={"center"} p="20px" >
                 <Box display="flex" gap={4} >
+                
                 <Image w="200px" alt="discovery Logo" src="https://www.discoveryplus.in/129c5de772422db12a69e397768bd8ec.png" />
          
           
@@ -40,7 +41,7 @@
             </Center>
            
                 </Flex>
-               
+                
         </>
     );  
 };
