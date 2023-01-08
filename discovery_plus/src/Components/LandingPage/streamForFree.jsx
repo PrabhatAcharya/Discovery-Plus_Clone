@@ -1,3 +1,5 @@
+// import styled from "styled-components"
+import styled from "@emotion/styled";
 
 import styled from "@emotion/styled"
 import play from "./Homeimages/play.png"

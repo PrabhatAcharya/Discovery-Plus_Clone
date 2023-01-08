@@ -1,4 +1,6 @@
 
+import { Explore } from "./Components/explore/explore.jsx";
+
 import ALLRouter from "./Components/AllRouter/router";
 import { Navbar } from "./Components/LandingPage/navbar";
 import Voucher from "../src/Components/Primium/Voucher.jsx"
