@@ -68,3 +68,26 @@ const slider = [{
 ,
 ]
 
+
+  {/* <div className="dropdown px-3">
+                <span className="navbar-toggler-icon dropbtn"></span>
+                <div className="dropdown-content bg-black p-3 mt-0" style={{ minWidth: "240px", borderRadius: "10px" }}>
+                  <div className="btn-group" role="group" aria-label="Basic radio toggle button group" style={{ width: "100%" }}>
+                    <input type="radio" className="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
+                    <label className="btn-outline-dark px-3  py-1" for="btnradio1">Kids Safe</label>
+                    <input type="radio" className="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+                    <label className="btn-outline-dark px-3 py-1" for="btnradio2">All Access</label>
+                  </div>
+                  <ul className="list-group" >
+                    <p className='mb-0' >
+                      <a style={{ border: "none", background: "none", color: "#838991" }} className="hov list-group-item" aria-current="page">Redeem Voucher</a></p>
+                    <p className='mb-0' >
+                      <a style={{ border: "none", background: "none", color: "#838991" }} className="hov list-group-item" aria-current="page">Favourites</a></p>
+                    <p className='mb-0' >
+                      <a style={{ border: "none", background: "none", color: "#838991" }} className="hov list-group-item" aria-current="page">WatchList</a></p>
+                    <p className='mb-0' >
+                      <a style={{ border: "none", background: "none", color: "#838991" }} className="hov list-group-item" aria-current="page">Link TV App</a></p>
+                  </ul>
+    
+                </div>
+              </div> */}

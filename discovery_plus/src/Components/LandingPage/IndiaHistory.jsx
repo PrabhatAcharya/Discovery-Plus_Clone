@@ -108,7 +108,7 @@ export const IndiaHistory=()=> {
 
                                     <div className="row">
                                         <div className="col-10">
-                                            <p className="float-start" style={{ color: "#abafb4" }} aria-current="page" >{e.description}</p>
+                                            <p className="float-start" style={{ color: "#abafb4" }} aria-current="page" >{e.dis}</p>
                                         </div>
                                         <div className="col-2">
                                         <i class="fa-regular fa-heart" onClick={() => {
@@ -133,22 +133,26 @@ export const IndiaHistory=()=> {
 const slider = [{
     id: 1,
     img: "https://ap2-prod-images.disco-api.com/2022/11/29/763c25de-0a7b-4f4a-8574-cda8c9906a48.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Rakkt",
+    dis:"Discover historical assassinations.."
 },
 {
     id: 2,
     img: "https://ap2-prod-images.disco-api.com/2022/11/18/ff8aa059-1019-4837-a551-b33644937f73.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Ekaant Sarhad Paar",
+    dis:"Akul Tripathi ventures to ..."
 },
 {
     id: 3,
     img: "https://ap2-prod-images.disco-api.com/2022/11/11/2fe3d4b0-b7b9-48fe-b905-886bbe1b906a.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Sharanam: Safar Vishwaas Ka",
+    dis:"Akul Tripathi ventures to ..."
 },
 {
     id: 4,
     img: "https://ap2-prod-images.disco-api.com/2022/10/25/bd64e71a-7418-44bc-8a54-119979a57304.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Janani: River of Life",
+    dis:"Discover the mythical and ..."
 }
 ]
 
