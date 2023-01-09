@@ -1,0 +1,36 @@
+.body2{
+    background-color: grey;
+    height: 650px;
+}
+.Signout_container{
+    border:1px solid black;
+    height: 400px;
+    width: 580px;
+    margin: auto;
+    color:white;
+    background-color: black;
+}
+.Signout_container div p{
+    color:white
+}
+.gap4{
+    padding: 40px;
+}
+.two_button{
+    display: flex;
+}
+.Account_heading{
+    text-align: center;
+    color: white;
+}
+.break{
+    color: grey;
+    width: 96%;
+}
+.mob_num{
+    margin-bottom: none;
+}
+.Sub_section{
+    display: flex;
+}
+

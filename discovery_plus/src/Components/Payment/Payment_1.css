@@ -1,0 +1,39 @@
+.payment_body{
+    background-color: gray;
+    height:650px;
+}
+.payment_container{
+    border: 1px solid black;
+    height: 430px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    background: #121317;
+}
+.gap7{
+    height:100px;
+    background-color: gray;
+}
+.gap7 img{
+    width:200px;
+    margin-top: 20px;
+}
+.image_section img{
+    margin-top: 30px;
+    margin-left: 5px;
+
+}
+.head_para{
+    text-align: center;
+    margin-right: 50px;
+    color:aliceblue;
+    font-size: 20px;
+}
+.amt_section{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+

@@ -1,9 +1,12 @@
 
+
 import ALLRouter from "./Components/AllRouter/router";
 import { Navbar } from "./Components/LandingPage/navbar";
 import { useState,useEffect } from "react";
 
 import AllRouter from "./Components/AllRouter/router";
+
+
 import Premium from "./Components/Kids_componanrts/video_prem";
 import { Footer } from "./Components/Footer/Footer";
 function App() {
@@ -23,7 +26,10 @@ function App() {
     <div className="App bg-plus_back">
       <Navbar data={watchingData}/>
       <ALLRouter/>
-      <Footer/>
+     
+      <Navbar />
+      <ALLRouter />
+      <Footer />
 
     </div>
   
