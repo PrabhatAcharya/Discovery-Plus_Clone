@@ -36,7 +36,7 @@
                  </InputGroup>
 
                 <Link to="/signin"><Button border="1px solid" bg="black" color="white" m={3}> {!ss? "Sign In" : "My Account " } </Button></Link>
-                <Link to="/signin"><Button border="none" bg="blue.500" color="white"> {"Buy Plan" } </Button></Link>
+                <Link to="/premium"><Button border="none" bg="blue.500" color="white"> {"Buy Plan" } </Button></Link>
             </Center>
            
                 </Flex>
