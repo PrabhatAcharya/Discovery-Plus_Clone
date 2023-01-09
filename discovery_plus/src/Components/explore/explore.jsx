@@ -25,6 +25,7 @@ import All_exp from "./Images/all_explore.png";
 import Animal from "./Images/animal_explore.png";
 import Bbc from "./Images/bbc_explore.png";
 import Discov from "./Images/disco_explore.png";
+
 import Dmax from "./Images/Dmax_explore.png";
 import Euro from "./Images/euro_explore.jpg";
 import Food from "./Images/food_explore.jpg";
