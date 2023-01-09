@@ -16,8 +16,7 @@ function App() {
       <Navbar/>
       <ALLRouter/>
      
-      <Navbar />
-      <ALLRouter />
+      
       <Footer />
 
     </div>

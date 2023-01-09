@@ -270,8 +270,8 @@ export const Explore=()=>{
          <div className="live-grid">
 
          <div>
-            <Link to="/home">
-           <div className="blk2_height">
+           
+           <a href="https://www.discoveryplus.in/channel/bbc">
              {/* <Link to="/Home"> */}
                 <div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Bbc})` }}>
@@ -279,14 +279,14 @@ export const Explore=()=>{
              </div>
              </div>
              
-             </Link>
+             </a>
              {/* </Link> */}
              
             
          </div>
          <div> 
             <Link to="/kids">
-             <a className="blk2_subs" href=""><div className="blk2_height">
+             <a className="blk2_subs" href="https://www.discoveryplus.in/channel/bbc">
            
              <div className="blk2_height">
 
@@ -300,7 +300,7 @@ export const Explore=()=>{
          </div>
          <div>
             <Link to="/shorts">
-             <a className="blk2_subs" href=""><div className="blk2_height">
+             <a className="blk2_subs" href="https://www.discoveryplus.in/channel/bbc"><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${All_exp})` }}>
                  <div className="background"></div>
              </div>
@@ -310,14 +310,14 @@ export const Explore=()=>{
 
          </div>
          <div>  
-            <Link to="/shorts">
-             <a className="blk2_subs" href=""><div className="blk2_height">
+            
+             <a className="blk2_subs" href="https://www.discoveryplus.in/channel/bbc"><div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Mind})` }}>
                  <div className="background"></div>
              </div>
              </div>
              </a>
-             </Link>
+             
          </div>
          </div>
         
