@@ -15,6 +15,8 @@ import Payment from "../Payment/Payment_1"
 import Otp from "../Login&Signup/Otp"
 import Signout from "../Login&Signup/Signout"
 import Payment_2 from "../Payment/Payment_2"
+import { Explore } from '../explore/explore'
+
 
 function AllRouter() {
   return (
@@ -23,6 +25,7 @@ function AllRouter() {
         <Route path="" element={<Home/>}/>
         <Route path='' element={<Home/>} />
         <Route path='/explore' element={<Explore/>} />
+        <Route path='/explore' element={<Explore/>}/>
         <Route path='/kids' element={<Kids/>} />
         <Route path='/watch' element={<Watch/>}/>
         <Route path='/shorts' element={<Short/>} />
@@ -37,6 +40,7 @@ function AllRouter() {
         <Route path='/Shows_You_Love' element={<HomevedioPlay/>} />
         <Route path='/shorts' element={<Short/>}/>
         <Route path='/videopremium' element={<Video_prem/>}/>
+        <Route path='*' element={<div>Not Found</div>}/>
       </Routes>
     </div>
   )

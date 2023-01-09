@@ -18,6 +18,7 @@
 
 //     </>
 // }
+// https://www.discoveryplus.in/channel/discovery-channel?liveStream=true
 import React from "react";
 
 import AnE from "./Images/a&e_explore.png"
@@ -40,6 +41,8 @@ import "./CSS/explore.css"
 import { Link } from "react-router-dom";
 import Short from "../shorts/short";
 import {Kids} from "../Kids_componanrts/Kids"
+
+
 
 
 
@@ -162,7 +165,7 @@ export const Explore=()=>{
               </div>  
                    </div> 
           </a> 
-          <a className="live_blks" href="">
+          <a className="live_blks" href="https://www.discoveryplus.in/channel/discovery-channel?liveStream=true">
              <div className="subboxes">
                 <div className="img_contain" style={{ backgroundImage:`url(${Turbo})` }}>
                <div className="img_details">
@@ -269,23 +272,31 @@ export const Explore=()=>{
          <div>
             <Link to="/home">
            <div className="blk2_height">
+             {/* <Link to="/Home"> */}
+                <div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Bbc})` }}>
                  <div className="background"></div>
              </div>
              </div>
              
              </Link>
+             {/* </Link> */}
+             
             
          </div>
          <div> 
             <Link to="/kids">
              <a className="blk2_subs" href=""><div className="blk2_height">
+           
+             <div className="blk2_height">
+
              <div className="blk2_contain" style={{ backgroundImage:`url(${AnE})` }}>
                  <div className="background"></div>
              </div>
              </div>
              </a>
              </Link>
+             
          </div>
          <div>
             <Link to="/shorts">
