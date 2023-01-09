@@ -1,7 +1,14 @@
+// import { useState } from "react";;
+// import styled from "@emotion/styled";
+// import ShortVideo from "./Videos";
+// import Icons from "./Icons";
+// import './Short.css';
 import { useState } from "react";
+import styled from "@emotion/styled";
 import ShortVideo from "./Videos";
 import Icons from "./Icons";
-import './Short.css';
+import './Short.css'
+
 const Short =() => {
     const [category_all, setCategory_all] = useState("category_opt_all");
     const [category_all2, setCategory_all2] = useState("category_opt_all2");
