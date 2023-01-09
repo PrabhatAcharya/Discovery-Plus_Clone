@@ -4,6 +4,8 @@ import Watch from '../Kids_componanrts/Watch'
 import Short from '../shorts/short'
 import HomevedioPlay from '../LandingPage/HomevedioPlay'
 import Kids from '../Kids_componanrts/Kids'
+
+import { Explore } from '../explore/explore'
 import Video_prem from '../Kids_componanrts/video_prem'
 import { Home } from '../LandingPage/home'
 import Signin from "../Login&Signup/Signin.jsx"
@@ -20,6 +22,7 @@ function AllRouter() {
       <Routes>
         <Route path="" element={<Home/>}/>
         <Route path='' element={<Home/>} />
+        <Route path='/explore' element={<Explore/>} />
         <Route path='/kids' element={<Kids/>} />
         <Route path='/watch' element={<Watch/>}/>
         <Route path='/shorts' element={<Short/>} />
