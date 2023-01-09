@@ -3,11 +3,12 @@ import React from 'react'
 const HomevedioPlay = () => {
     let data =JSON.parse(localStorage.getItem("showYouLove"))|| []
     // console.log(data);
+   
   return (
     <div className='Image_container'>
     <div className=''>
-            <div className="image_cont">
-            <img src={data.img} alt=""  className=''/>
+            <div className="image_cont" style={{width:"900px",margin:"auto"}}>
+            <img src={data.img} alt="" style={{height:"400px"}} className=''/>
             </div>
         <div className='flex justify-between relative'>
             <div className=' flex text-white text-4xl gap-2 items-center'>
@@ -60,6 +61,7 @@ const HomevedioPlay = () => {
     </div>
 </div>
 )
+
 }
 
 export default HomevedioPlay

@@ -102,14 +102,11 @@ export const StreamForFree=()=>{
                                     </div>
 
                                     <div className="row">
-                                        <div className="col-10">
-                                            <p className="float-start" style={{ color: "#abafb4" }} aria-current="page" >{e.description}</p>
-                                        </div>
+                                        {/* <div className="col-10">
+                                            <p className="float-start" style={{ color: "#abafb4",marhiTop:"-0.5rem" }} aria-current="page" >{e.dis}</p>
+                                        </div> */}
                                         <div className="col-2">
-                                        <i class="fa-regular fa-heart" onClick={() => {
-                                            
-
-                                            }}></i>
+                                        <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
 
@@ -137,32 +134,38 @@ export const StreamForFree=()=>{
 const slider = [{
     id: 1,
     img: "https://ap2-prod-images.disco-api.com/2022/12/21/e290d56d-ff1b-4aee-83ad-06f751c807d4.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Build India",
+    dis:"Uncover how transformative infrastr's.."
 },
 {
     id: 2,
     img: "https://ap2-prod-images.disco-api.com/2022/12/06/ff00ee74-a71f-4174-a87a-3335cfb2670a.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Food Paradise International",
+    dis:"See the world's tastiest dishes .."
 },
 {
     id: 3,
     img: "https://ap2-prod-images.disco-api.com/2022/11/08/af2d3c2f-45ab-4eae-a317-d035a972239c.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Can Video Games Change the World?",
+    dis:"UTwo teams develop desertification's.."
 },
 {
     id: 4,
     img: "https://ap2-prod-images.disco-api.com/2020/09/10/651f18ec-6098-46ba-8483-a64de9730429.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Dual Survival",
+    dis:"Dave and Cody demonstrate survivals.."
 },
 {
     id: 5,
     img: "https://ap2-prod-images.disco-api.com/2022/04/12/3b235cd3-71aa-442a-b0e2-acc9602ae6fe.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"GoNorthEast",
+    dis:"Anchors journey through the North.."
 },
 {
     id: 6,
     img: "https://ap2-prod-images.disco-api.com/2022/11/25/eca6ebce-6669-4cfb-afc8-da3d87fc668a.jpeg?bf=0&f=jpg&p=true&q=85&w=600",
-
+    title:"Space Jump: How Red Bull",
+    dis:"On 14th Oct 2012, Felix Baumgartner..."
 }
 ]
 
