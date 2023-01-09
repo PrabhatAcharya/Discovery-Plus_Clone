@@ -270,7 +270,7 @@ export const Explore=()=>{
 
          <div>
             <Link to="/home">
-           <div className="blk2_height">
+           
              {/* <Link to="/Home"> */}
                 <div className="blk2_height">
              <div className="blk2_contain" style={{ backgroundImage:`url(${Bbc})` }}>
@@ -285,7 +285,7 @@ export const Explore=()=>{
          </div>
          <div> 
             <Link to="/kids">
-             <a className="blk2_subs" href=""><div className="blk2_height">
+             <a className="blk2_subs" href="">
            
              <div className="blk2_height">
 
